@@ -35,7 +35,7 @@
             font-size: 14px;
             line-height: 22px;
             letter-spacing: 0.02em;
-            color: #C2CFE0;
+            color: #323C47;
             padding:0 16px;
             
         }
@@ -152,6 +152,7 @@
     }
 
     &__radio{
+       
         &-input{
             display: none;
             &:checked + .form__radio-label{
@@ -163,12 +164,23 @@
                 }
                 
             }
+            &:checked + label{
+                color: #334D6E;
+            }
+            
         }
         &-label{
             position: relative;
             display: block;
             padding-left: 32px;
             // border: 1px solid;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #C2CFE0;
             cursor: pointer;
             &::before{
                 content: '';
@@ -198,6 +210,8 @@
     }
     &__label{
         transition: all 500ms ease!important;
+
+        
      
     
     }
@@ -572,9 +586,13 @@
           &--delete{
             transition: all 300ms ease;
             opacity: 0;
+            svg path{
+                stroke: #F88E86;
+                transition: all 300ms ease;
+               }
             &:hover{
                svg path{
-                stroke: #E0291B;
+                stroke: #F44336;
                }
             }
           }
@@ -843,9 +861,7 @@
         }
 
 
-        &:first-child{
-            border: 1px solid red;
-        }
+      
     }
     &__link{
         font-family: 'Manrope';

@@ -12,19 +12,18 @@
     <div class="signform">
         <div class="signform__container">
             <div class="signform__content">
-           
               <form action="#" class="form" autocomplete="off">
                     <a href="#" class="form__logo">
                         <img src="./imgs/icon/logoSvg.svg" alt="logo site">
                     </a>
                     <div class="form__item">
-                        <div class="form__input ">
+                        <div class="form__input js-input">
                             <input type="text" placeholder="Логин" id="login">
                         </div>
                         <label for="login" class="form__label">Логин</label>
                     </div>
                     <div class="form__item">
-                        <div class="form__input form__input--password">
+                        <div class="form__input js-input form__input--password">
                             <input type="password" placeholder="Пароль" id="password">
                             <div class="form__icon"> 
                                 <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +36,7 @@
                         <label for="password" class="form__label">Пароль</label>
                     </div>
                     <div class="form__item">
-                        <div class="form__input form__input--password">
+                        <div class="form__input form__input--password js-input">
                             <input type="password" placeholder="Повторите пароль" id="password-confirm">
                             <div class="form__icon">
                                 <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +64,7 @@
             </div>
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="./scripts/form.js"></script>
 </body>
 </html>

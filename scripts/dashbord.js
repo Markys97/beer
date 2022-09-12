@@ -432,6 +432,17 @@ tabMenuItems.forEach(function(tabMenuItem, index,arr){
 })
 
 
+// handler pages layout 
+
+let section =document.querySelector('.js-params');
+if (section !== null){
+    let params = section.getAttribute('data-class');
+    pageContent.className +=params;
+    
+}
+
+
+
 
  
 
