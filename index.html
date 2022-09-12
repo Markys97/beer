@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Дашборд</title>
+</head>
+<body id="dashbor">
+    <div class="page">
+        <aside class="page-sidebar">
+           
+            <nav class="menu-left">
+                <ul class="menu-left__list">
+                    <li class="menu-left__item menu-left__item--logo">
+                        <a href="#" class="logos__long">
+                            <img src="./imgs/icon/logo.svg" alt="logo site">
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дашборд</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                                
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="menu-left__link-text">Объекты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="./partenaire-page.html" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 20.9999V18.9999C21.9993 18.1136 21.7044 17.2527 21.1614 16.5522C20.6184 15.8517 19.8581 15.3515 19 15.1299" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.12988C16.8604 3.35018 17.623 3.85058 18.1676 4.55219C18.7122 5.2538 19.0078 6.11671 19.0078 7.00488C19.0078 7.89305 18.7122 8.75596 18.1676 9.45757C17.623 10.1592 16.8604 10.6596 16 10.8799" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дочерние партнеры</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8965 14.0478L19.4701 18.3469C18.788 19.4234 17.9048 20.3624 16.8659 21.1109C15.5554 22.0552 14.0358 22.6684 12.437 22.8982C10.8381 23.128 9.20743 22.9675 7.68402 22.4305C6.16061 21.8935 4.78973 20.9959 3.68837 19.8144C2.58701 18.6328 1.78787 17.2023 1.35913 15.6449C0.930401 14.0876 0.884809 12.4496 1.22625 10.8709C1.56769 9.29207 2.28602 7.81933 3.31995 6.57831C4.1396 5.5945 5.13829 4.77946 6.25996 4.17455L9.94667 13.0287C10.1309 13.4713 10.468 13.8329 10.8965 14.0478ZM12.0437 8.53842L9.05743 1.44215C10.0655 1.13221 11.1182 0.982858 12.1769 1.00156C13.2355 1.02027 14.2824 1.20672 15.2788 1.55208L12.0437 8.53842ZM18.0548 3.59221C18.9245 4.10257 19.7139 4.74239 20.3949 5.49126C21.301 6.48767 21.9969 7.65666 22.4407 8.92826C22.8845 10.1999 23.0673 11.5479 22.978 12.8918C22.9108 13.9018 22.6911 14.8938 22.3279 15.8345L14.2979 11.7704L18.0548 3.59221Z" stroke="#90A0B7" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Отчеты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15L15.5 11.5" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.3 18C20.7 17 21 15.8 21 14.6C21 9.8 17 6 12 6C7 6 3 9.8 3 14.6C3 15.8 3.3 17 3.7 18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                            <span class="menu-left__link-text">Тарифы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Заказы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Товары</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--bottom" data-off="true">
+                        <a href="javascript:void();" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-icon">
+                                <path d="M11 17L6 12L11 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 17L13 12L18 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                                
+                            <span class="menu-left__link-text">Свернуть</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="page-body page-body--one page-body--index">
+            <header class="header">
+                <div class="header__container">
+                    <nav class="header__menu menu-top">
+                        <ul class="menu-top__list">
+                            <li class="menu-top__item">
+                                <a href="#">
+                                    <div class="menu-top__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="menu-top__icon-number">
+                                            <span class="menu-top__icon-number-qt">99</span> <span  class="menu-top__icon-number-sign">+</span>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="menu-top__text">
+                                        Заказы
+                                    </div>
+                                    
+                                </a>
+                                <div class="menu-top__popUp" >
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Новые заказы</span>
+                                        <span class="compte__number">99+</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Необработанные заказы</span>
+                                        <span class="compte__number compte__number--blue">20</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Заказы в работе</span>
+                                        <span class="compte__number compte__number--green">5</span>
+                                    </a>
+                                  <div class=" menu-top__popUp-contenairLink">
+                                    <a href="#" class="menu-top__popUp-link">На страницу заказов</a>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="menu-top__item">
+                               <a href="#">
+                                <div class="menu-top__icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 10.668C24 8.54624 23.1571 6.51141 21.6569 5.01111C20.1566 3.51082 18.1217 2.66797 16 2.66797C13.8783 2.66797 11.8434 3.51082 10.3431 5.01111C8.84286 6.51141 8 8.54624 8 10.668C8 20.0013 4 22.668 4 22.668H28C28 22.668 24 20.0013 24 10.668Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3067 28C18.0723 28.4041 17.7358 28.7395 17.331 28.9727C16.9262 29.2059 16.4672 29.3286 16 29.3286C15.5329 29.3286 15.0739 29.2059 14.6691 28.9727C14.2642 28.7395 13.9278 28.4041 13.6934 28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <div class="menu-top__icon-number">
+                                        <span class="menu-top__icon-number-qt">95</span> <span  class="menu-top__icon-number-sign">+</span>
+                                    </div>
+                                        
+                                </div>
+                                <div class="menu-top__text">
+                                    Уведомления
+                                </div>
+                               </a>
+                               <div class="menu-top__popUp menu-top__popUp--notification">
+                                <a href="#" class="notification notification--new">
+                                    <div class="notification__text">Заказ №123456 оплачен</div>
+                                    <div class="notification__date">Сейчас</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                    <div class="notification__date">Вчера в 18:06</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">08.06 исекает срок действия вашего тарифа. Продлите подписку для продолжения работы.</div>
+                                    <div class="notification__date">26 июн в 19:00</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Тариф “Продвинутый владелец” активирован</div>
+                                    <div class="notification__date">03 мая в 14:56</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Заказ №45897856 оплачен</div>
+                                    <div class="notification__date">10 мар в 14:56</div>
+                                </a>
+                              <div class=" menu-top__popUp-contenairLink">
+                                <a href="#" class="menu-top__popUp-link">Показать все</a>
+                              </div>
+                               </div>
+                            </li>
+                            <li class="menu-top__item menu-top__item--mobile">
+                                <a href="#" class="menu-top__logo">
+                                    <img src="./imgs/picture/logo.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--big">
+                                    <img src="./imgs/picture/logo-court.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--small">
+                                </a>
+                            </li>
+                            <li class="menu-top__item">
+                                <a href="#" class="menu-top__user">
+                                    <div class="menu-top__user-name">
+                                        Петров Петрович
+                                    </div>
+                                    <div class="menu-top__user-img">
+                                        <img src="./imgs/picture/user.png" alt=" user profil picture">        
+                                    </div>
+                                </a>
+                                <div class="menu-top__popUp menu-top__popUp--session">
+                                   <a href="#" class="link-user-pop link-user-pop--link">Личные данные</a>
+                                   <a href="#" class="link-user-pop link-user-pop--link">Безопасность</a>
+                                   <a href="#" class="link-user-pop link-user-pop--btn">Выйти</a>
+                                 
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+           
+            <section class="dashbord">
+                <div class="dashbord__content" data-target>
+                   <div class="dashbord__left">
+                        <div class="perso-data">
+                            <div class="perso-data__content">
+                                <div class="perso-data__header">
+                                <h2 class="perso-data__title">
+                                    <a href="#">Личные данные</a>
+                                </h2>
+                                <button class="perso-data__button">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.22 2H11.78C11.2496 2 10.7409 2.21071 10.3658 2.58579C9.99072 2.96086 9.78 3.46957 9.78 4V4.18C9.77964 4.53073 9.68706 4.87519 9.51154 5.17884C9.33602 5.48248 9.08374 5.73464 8.78 5.91L8.35 6.16C8.04596 6.33554 7.70108 6.42795 7.35 6.42795C6.99893 6.42795 6.65404 6.33554 6.35 6.16L6.2 6.08C5.74107 5.81526 5.19584 5.74344 4.684 5.88031C4.17217 6.01717 3.73555 6.35154 3.47 6.81L3.25 7.19C2.98526 7.64893 2.91345 8.19416 3.05031 8.706C3.18717 9.21783 3.52154 9.65445 3.98 9.92L4.13 10.02C4.43228 10.1945 4.68362 10.4451 4.85905 10.7468C5.03448 11.0486 5.1279 11.391 5.13 11.74V12.25C5.1314 12.6024 5.03965 12.949 4.86405 13.2545C4.68844 13.5601 4.43521 13.8138 4.13 13.99L3.98 14.08C3.52154 14.3456 3.18717 14.7822 3.05031 15.294C2.91345 15.8058 2.98526 16.3511 3.25 16.81L3.47 17.19C3.73555 17.6485 4.17217 17.9828 4.684 18.1197C5.19584 18.2566 5.74107 18.1847 6.2 17.92L6.35 17.84C6.65404 17.6645 6.99893 17.5721 7.35 17.5721C7.70108 17.5721 8.04596 17.6645 8.35 17.84L8.78 18.09C9.08374 18.2654 9.33602 18.5175 9.51154 18.8212C9.68706 19.1248 9.77964 19.4693 9.78 19.82V20C9.78 20.5304 9.99072 21.0391 10.3658 21.4142C10.7409 21.7893 11.2496 22 11.78 22H12.22C12.7504 22 13.2591 21.7893 13.6342 21.4142C14.0093 21.0391 14.22 20.5304 14.22 20V19.82C14.2204 19.4693 14.3129 19.1248 14.4885 18.8212C14.664 18.5175 14.9163 18.2654 15.22 18.09L15.65 17.84C15.954 17.6645 16.2989 17.5721 16.65 17.5721C17.0011 17.5721 17.346 17.6645 17.65 17.84L17.8 17.92C18.2589 18.1847 18.8042 18.2566 19.316 18.1197C19.8278 17.9828 20.2645 17.6485 20.53 17.19L20.75 16.8C21.0147 16.3411 21.0866 15.7958 20.9497 15.284C20.8128 14.7722 20.4785 14.3356 20.02 14.07L19.87 13.99C19.5648 13.8138 19.3116 13.5601 19.136 13.2545C18.9604 12.949 18.8686 12.6024 18.87 12.25V11.75C18.8686 11.3976 18.9604 11.051 19.136 10.7455C19.3116 10.4399 19.5648 10.1862 19.87 10.01L20.02 9.92C20.4785 9.65445 20.8128 9.21783 20.9497 8.706C21.0866 8.19416 21.0147 7.64893 20.75 7.19L20.53 6.81C20.2645 6.35154 19.8278 6.01717 19.316 5.88031C18.8042 5.74344 18.2589 5.81526 17.8 6.08L17.65 6.16C17.346 6.33554 17.0011 6.42795 16.65 6.42795C16.2989 6.42795 15.954 6.33554 15.65 6.16L15.22 5.91C14.9163 5.73464 14.664 5.48248 14.4885 5.17884C14.3129 4.87519 14.2204 4.53073 14.22 4.18V4C14.22 3.46957 14.0093 2.96086 13.6342 2.58579C13.2591 2.21071 12.7504 2 12.22 2V2Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                </button>
+                                </div>
+                                <div class="perso-data__info">
+                                    <div class="perso-data__img">
+                                            <img src="./imgs/picture/avatar.png" alt=" person">
+                                    </div>
+                                    <div class="perso-data__body">
+                                            <div class="perso-data__name">
+                                                Новослабодская Регина Олеговна
+                                            </div>
+                                            <div class="perso-data__link">novoslabodskaya@mail.ru</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tableau">
+                            <div class="tableau__container">
+                                <div class="tableau__content">
+                                    <h2 class="tableau__title">
+                                        <a href="javascript:void()">Управление сетями</a>
+                                    </h2>
+                                    <div class="tableau__row tableau__row--header">
+                                        <div class="tableau__col tableau__col--long">
+                                            <span class="tableau__col-title">Сеть</span>
+                                        </div>
+                                        <div class="tableau__col ">
+                                            <span class="tableau__col-title">Кол-во франчайзи</span>
+                                        </div>
+                                        <div class="tableau__col ">
+                                            <span class="tableau__col-title">Кол-во точек</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/net-1.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">Пиво и рыба</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">1</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">128</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/net-2.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">Пивоман</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">10</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/net-3.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">Товарищество пиво- и медоваренного завода Ивана Дурдина</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">10</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-4.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">ПивКо</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-5.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">Мир Пива</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-6.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">ХмельСолод</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-7.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">BEERжа</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-8.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">ЛИТ.RA</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-9.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">Пивной Бутик Шпачек</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                    <div class="tableau__row tableau__row--link">
+                                        <div class="tableau__col tableau__col--long">
+                                            <a href="#" class="tableau__col-body">
+                                                <div class="tableau__col-img">
+                                                    <img src="./imgs/picture/order-10.png" alt="product">
+                                                </div>
+                                                <div class="tableau__col-name">Пивная Бухта</div>
+                                            </a>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во франчайзи</span>
+                                            <span class="tableau__col-number">8</span>
+                                        </div>
+                                        <div class="tableau__col">
+                                            <span class="tableau__col-title tableau__col-title--content">Кол-во точек</span>
+                                            <span class="tableau__col-number">254</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                          <div class="product__content">
+                            <h2 class="product__title h2">
+                                <a href="#">Товары</a>
+                            </h2>
+                            <div class="product__row">
+                                <a href="#" class="product__item item-product">
+                                    <div class="item-product__content">
+                                        <div class="item-product__icon">
+                                            <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5 3C46.7452 3 49.3759 5.63073 49.3759 8.8759V37.6241H78.1241C81.3693 37.6241 84 40.2548 84 43.5C84 46.7452 81.3693 49.3759 78.1241 49.3759H49.3759V78.1241C49.3759 81.3693 46.7452 84 43.5 84C40.2548 84 37.6241 81.3693 37.6241 78.1241V49.3759H8.8759C5.63073 49.3759 3 46.7452 3 43.5C3 40.2548 5.63073 37.6241 8.8759 37.6241H37.6241V8.8759C37.6241 5.63073 40.2548 3 43.5 3Z" fill="#C2CFE0"/>
+                                            </svg>
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="item-product__text">
+                                        Создать товар
+                                    </div>
+                                </a>
+                                <a href="#" class="product__item item-product">
+                                    <div class="item-product__content">
+                                        <div class="item-product__icon">
+                                            <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5835 28.6673C3.5835 26.6883 5.18781 25.084 7.16683 25.084H28.6668C29.8649 25.084 30.9838 25.6828 31.6483 26.6796L37.7512 35.834H48.2491L54.352 26.6796C55.0166 25.6828 56.1354 25.084 57.3335 25.084H78.8335C80.8125 25.084 82.4168 26.6883 82.4168 28.6673C82.4168 30.6463 80.8125 32.2507 78.8335 32.2507H59.2512L53.1483 41.405C52.4838 42.4019 51.3649 43.0007 50.1668 43.0007H35.8335C34.6354 43.0007 33.5166 42.4019 32.852 41.405L26.7491 32.2507H7.16683C5.18781 32.2507 3.5835 30.6463 3.5835 28.6673Z" fill="#C2CFE0"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3599 10.75L63.6399 10.75C65.6399 10.7511 67.6018 11.31 69.3015 12.364C69.9833 12.7868 70.7941 13.5627 71.3362 14.0909C72.0013 14.7389 72.7557 15.5139 73.4525 16.2439C74.1535 16.9782 74.8157 17.6874 75.3015 18.2117C75.5448 18.4742 75.7448 18.6915 75.8845 18.8436L76.0469 19.0208L76.1049 19.0843C76.182 19.1689 76.2563 19.2585 76.3249 19.35L81.6999 26.5167C82.1651 27.1369 82.4166 27.8913 82.4166 28.6667V64.5C82.4166 67.3511 81.284 70.0854 79.268 72.1014C77.252 74.1174 74.5177 75.25 71.6666 75.25H14.3333C11.4822 75.25 8.74787 74.1174 6.73185 72.1014C4.71584 70.0854 3.58325 67.3511 3.58325 64.5V28.6667C3.58325 27.8913 3.83472 27.1369 4.29992 26.5167L9.67492 19.35C9.74354 19.2585 9.8165 19.1704 9.89355 19.0858L9.95299 19.0208L10.1153 18.8436C10.255 18.6915 10.4551 18.4742 10.6984 18.2117C11.1841 17.6874 11.8464 16.9782 12.5473 16.2439C13.2441 15.5139 13.9985 14.7389 14.6636 14.0909C15.2057 13.5627 16.0165 12.7868 16.6984 12.364C18.3981 11.31 20.36 10.7511 22.3599 10.75ZM15.3032 23.7901L10.7499 29.8611V64.5C10.7499 65.4504 11.1274 66.3618 11.7995 67.0338C12.4715 67.7058 13.3829 68.0833 14.3333 68.0833H71.6666C72.6169 68.0833 73.5284 67.7058 74.2004 67.0338C74.8724 66.3618 75.2499 65.4504 75.2499 64.5V29.8611L70.6967 23.7901L70.6055 23.6906C70.4721 23.5453 70.2795 23.3362 70.0446 23.0826C69.5739 22.5746 68.9373 21.8929 68.2686 21.1924C67.5957 20.4876 66.9096 19.7838 66.335 19.224C65.934 18.8333 65.6882 18.614 65.5735 18.5116C65.4886 18.4359 65.4755 18.4243 65.5246 18.4547C64.9582 18.1035 64.3051 17.9171 63.6387 17.9167H22.3611C21.6947 17.9171 21.0416 18.1035 20.4753 18.4547C20.5243 18.4243 20.5112 18.4359 20.4264 18.5116C20.3117 18.614 20.0658 18.8333 19.6649 19.224C19.0902 19.7838 18.4041 20.4876 17.7313 21.1924C17.0626 21.8929 16.4259 22.5746 15.9553 23.0826C15.7203 23.3362 15.5278 23.5453 15.3944 23.6906L15.3032 23.7901Z" fill="#C2CFE0"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43 45.1504C43.7916 45.1504 44.4333 45.7921 44.4333 46.5837V60.9171C44.4333 61.7087 43.7916 62.3504 43 62.3504C42.2084 62.3504 41.5667 61.7087 41.5667 60.9171V46.5837C41.5667 45.7921 42.2084 45.1504 43 45.1504Z" fill="#C2CFE0"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.2089 57.5155C37.7686 56.9558 38.6762 56.9558 39.2359 57.5155L43.0002 61.2798L46.7644 57.5155C47.3242 56.9558 48.2317 56.9558 48.7915 57.5155C49.3512 58.0753 49.3512 58.9828 48.7915 59.5426L44.0137 64.3203C43.4539 64.8801 42.5464 64.8801 41.9867 64.3203L37.2089 59.5426C36.6491 58.9828 36.6491 58.0753 37.2089 57.5155Z" fill="#C2CFE0"/>
+                                            </svg>
+                                                
+                                                
+                                        </div>
+                                    </div>
+                                    <div class="item-product__text">
+                                        Создать товар
+                                    </div>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tarif">
+                           <div class="tarif__content">
+                                <h2 class="tarif__title h2">
+                                    <a href="#">Тарифы</a>
+                                </h2>
+                                <div class="tarif__row">
+                                    <div class="tarif__name">
+                                        “Супер-сеть”
+                                    </div>
+                                    <div class="tarif__date">
+                                        Действует до 14.10.2022
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                   </div>
+
+                   <div class="dashbord__right">
+                        <div class="statistic">
+                            <div class="statistic__content">
+                                <h2 class="statistic__title">
+                                    <a href="#">Заказы</a>
+                                </h2>
+                               <div class="statistic__row">
+                                    <a href="#" class="statistic__item item-statistic">
+                                        <div class="item-statistic__body">
+                                            <div class="item-statistic__img">
+                                                <img src="./imgs/icon/order-3.png" alt="icon">
+                                            </div>
+                                            <div class="item-statistic__title">
+                                                Новые заказы
+                                            </div>
+                                        </div>
+                                        <div class="item-statistic__number">
+                                            99+
+                                        </div>
+                                    </a>
+                                    <a href="#" class="statistic__item item-statistic">
+                                        <div class="item-statistic__body">
+                                            <div class="item-statistic__img">
+                                                <img src="./imgs/icon/order-2.png" alt="icon">
+                                            </div>
+                                            <div class="item-statistic__title">
+                                                Необработанные заказы
+                                            </div>
+                                        </div>
+                                        <div class="item-statistic__number">
+                                            2
+                                        </div>
+                                    </a>
+                                    <a href="#" class="statistic__item item-statistic">
+                                        <div class="item-statistic__body">
+                                            <div class="item-statistic__img">
+                                                <img src="./imgs/icon/order-1.png" alt="icon">
+                                            </div>
+                                            <div class="item-statistic__title">
+                                                Заказы в работе
+                                            </div>
+                                        </div>
+                                        <div class="item-statistic__number">
+                                            28
+                                        </div>
+                                    </a>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="tab__container">
+                                <div class="tab__content">
+                                    <h2 class="tab__title">
+                                        <a href="javascript:void()">Управление точками</a>
+                                    </h2>
+                                    <div class="tab__row">
+                                        <div class="tab__col">
+                                            <div class="tab__col-title">ID</div>
+                                        </div>
+                                        <div class="tab__col tab__col--middle">
+                                            <div class="tab__col-title ">Сеть</div>
+                                        </div>
+                                        <div class="tab__col">
+                                            <div class="tab__col-title">Адрес</div>
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="tab__row tab__row--link">
+                                        <div class="tab__col">
+                                            <div class="tab__col-title tab__col-title--content">ID</div>
+                                            <div class="tab__col-number">24</div>
+                                        </div>
+                                        <div class="tab__col tab__col--middle">
+                                            <div class="tab__col-body">
+                                                <div class="tab__col-img">
+                                                    <img src="./imgs/picture/net-2.png" alt="">
+                                                </div>
+                                                <div class="tab__col-name">
+                                                    ПивоманПивоманПивоман
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab__col">
+                                            <div class=" tab__col-title tab__col-title--content">Адрес</div>
+                                            <div class="tab__col-address">
+                                                г. Нижний Новгород, ​Академика Сахарова, 115
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__row tab__row--link">
+                                        <div class="tab__col">
+                                            <div class="tab__col-title tab__col-title--content">ID</div>
+                                            <div class="tab__col-number">24</div>
+                                        </div>
+                                        <div class="tab__col tab__col--middle">
+                                            <div class="tab__col-body">
+                                                <div class="tab__col-img">
+                                                    <img src="./imgs/picture/net-2.png" alt="">
+                                                </div>
+                                                <div class="tab__col-name">
+                                                    Пивоман
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab__col">
+                                            <div class=" tab__col-title tab__col-title--content">Адрес</div>
+                                            <div class="tab__col-address">
+                                                г. Нижний Новгород, ​Академика Сахарова, 115
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__row tab__row--link">
+                                        <div class="tab__col">
+                                            <div class="tab__col-title tab__col-title--content">ID</div>
+                                            <div class="tab__col-number">24</div>
+                                        </div>
+                                        <div class="tab__col tab__col--middle">
+                                            <div class="tab__col-body">
+                                                <div class="tab__col-img">
+                                                    <img src="./imgs/picture/net-2.png" alt="">
+                                                </div>
+                                                <div class="tab__col-name">
+                                                    Пивоман
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab__col">
+                                            <div class=" tab__col-title tab__col-title--content">Адрес</div>
+                                            <div class="tab__col-address">
+                                                г. Нижний Новгород, ​Академика Сахарова, 115
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__row tab__row--link">
+                                        <div class="tab__col">
+                                            <div class="tab__col-title tab__col-title--content">ID</div>
+                                            <div class="tab__col-number">24</div>
+                                        </div>
+                                        <div class="tab__col tab__col--middle">
+                                            <div class="tab__col-body">
+                                                <div class="tab__col-img">
+                                                    <img src="./imgs/picture/net-2.png" alt="">
+                                                </div>
+                                                <div class="tab__col-name">
+                                                    Пивоман
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab__col">
+                                            <div class=" tab__col-title tab__col-title--content">Адрес</div>
+                                            <div class="tab__col-address">
+                                                г. Нижний Новгород, ​Академика Сахарова, 115
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab__row tab__row--link">
+                                        <div class="tab__col">
+                                            <div class="tab__col-title tab__col-title--content">ID</div>
+                                            <div class="tab__col-number">24</div>
+                                        </div>
+                                        <div class="tab__col tab__col--middle">
+                                            <div class="tab__col-body">
+                                                <div class="tab__col-img">
+                                                    <img src="./imgs/picture/net-2.png" alt="">
+                                                </div>
+                                                <div class="tab__col-name">
+                                                    Пивоман
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab__col">
+                                            <div class=" tab__col-title tab__col-title--content">Адрес</div>
+                                            <div class="tab__col-address">
+                                                г. Нижний Новгород, ​Академика Сахарова, 115
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistic dashbord__answer">
+                            <div class="statistic__content">
+                                <h2 class="statistic__title">
+                                    <a href="#">Отчеты</a>
+                                </h2>
+                               <div class="statistic__row">
+                                    <a href="#" class="statistic__item item-statistic">
+                                        <div class="item-statistic__body">
+                                            <div class="item-statistic__img">
+                                                <img src="./imgs/icon/1.png" alt="icon">
+                                            </div>
+                                            <div class="item-statistic__title">
+                                                Отчет о продажах
+                                            </div>
+                                        </div>
+                                       
+                                    </a>
+                                    <a href="#" class="statistic__item item-statistic">
+                                        <div class="item-statistic__body">
+                                            <div class="item-statistic__img">
+                                                <img src="./imgs/icon/2.png" alt="icon">
+                                            </div>
+                                            <div class="item-statistic__title">
+                                                Отчет о заказах
+                                            </div>
+                                        </div>
+                                       
+                                    </a>
+                                    <a href="#" class="statistic__item item-statistic">
+                                        <div class="item-statistic__body">
+                                            <div class="item-statistic__img">
+                                                <img src="./imgs/icon/3.png" alt="icon">
+                                            </div>
+                                            <div class="item-statistic__title">
+                                                Отчет по выручке
+                                            </div>
+                                        </div>
+                                       
+                                    </a>
+                               </div>
+                            </div>
+                        </div>
+
+                      <div class="person">
+                        <div class="person__container">
+                            <div class="person__content">
+                                <h2 class="person__title">
+                                    <a href="javascript:void()">Управление дочерними партнерами</a>
+                                </h2>
+                                <div class="person__row">
+                                    <div class="person__col person__col--long"> <div class="person__col-title">ФИО</div> </div>
+                                    <div class="person__col "> <div class="person__col-title">Сеть</div> </div>
+                                    <div class="person__col "> <div class="person__col-title">Роль</div> </div>
+                                </div>
+
+                                <div class="person__row person__row--link">
+                                    <div class="person__col person__col--long">
+                                        <a href="#" class="person__col-body">
+                                            <div class="person__col-img">
+                                                <img src="./imgs/picture/girl.png" alt="person">
+                                            </div>
+                                           <div class="person__col-info">
+                                                <div class="person__col-name">
+                                                    Новослабодская Р. О.
+                                                </div>
+                                                <div class="person__col-work">
+                                                    ИП “Пивасик”
+                                                </div>
+                                           </div>
+                                        </a>
+                                     </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title person__col-title--content">Сеть</div> 
+                                         <a href="#" class="person__col-net person__col-net--limit">
+                                            Пивоман
+                                         </a>
+                                    </div>
+                                    <div class="person__col person__col-role-row ">
+                                         <div class="person__col-title  person__col-title--content">Роль</div>
+                                         <div class="person__col-wrapper-role">
+                                            <div class="person__col-role">
+                                                <span class="person__col-net person__col-net--role">Администратор сети</span>
+                                                <span class="person__col-role-btn">ещё</span>
+                                            </div>
+                                            <ul class="person__col-role-list">
+                                                <li class="person__col-role-item">Франчайзи сети</li>
+                                                <li class="person__col-role-item">Администратор точки</li>
+                                                <li class="person__col-role-item">Оператор точки</li>
+                                            </ul>
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="person__row person__row--link">
+                                    <div class="person__col person__col--long">
+                                        <a href="#" class="person__col-body">
+                                            <div class="person__col-img">
+                                                <img src="./imgs/picture/avatar.png" alt="person">
+                                            </div>
+                                           <div class="person__col-info">
+                                                <div class="person__col-name">
+                                                    Герасимов Н. П.
+                                                </div>
+                                               
+                                           </div>
+                                        </a>
+                                     </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title person__col-title--content">Сеть</div> 
+                                         <a href="#" class="person__col-net person__col-net--limit">
+                                            ПивКо
+                                         </a>
+                                    </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title  person__col-title--content">Роль</div>
+                                         <div class="person__col-wrapper-role">
+                                            <div class="person__col-role">
+                                                <span class="person__col-net person__col-net--role">Администратор сети</span>
+                                           
+                                            </div>
+                                         
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="person__row person__row--link">
+                                    <div class="person__col person__col--long">
+                                        <a href="#" class="person__col-body">
+                                            <div class="person__col-img">
+                                                <img src="./imgs/picture/user.png" alt="person">
+                                            </div>
+                                           <div class="person__col-info">
+                                                <div class="person__col-name">
+                                                    Тихомиров П. Н.
+                                                </div>
+                                               
+                                           </div>
+                                        </a>
+                                     </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title person__col-title--content">Сеть</div> 
+                                         <a href="#" class="person__col-net person__col-net--limit">
+                                            Товарищество пиво- и медоваренного завода Ивана Дурдина
+                                         </a>
+                                    </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title  person__col-title--content">Роль</div>
+                                         <div class="person__col-wrapper-role">
+                                            <div class="person__col-role">
+                                                <span class="person__col-net person__col-net--role">Франчайзи сети</span>
+                                           
+                                            </div>
+                                         
+                                         </div>
+                                    </div>
+                                </div>
+                                <div class="person__row person__row--link">
+                                    <div class="person__col person__col--long">
+                                        <a href="#" class="person__col-body">
+                                            <div class="person__col-img">
+                                                <img src="./imgs/picture/user.png" alt="person">
+                                            </div>
+                                           <div class="person__col-info">
+                                                <div class="person__col-name">
+                                                    Пивоварова А. О.
+                                                </div>
+                                               
+                                           </div>
+                                        </a>
+                                     </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title person__col-title--content">Сеть</div> 
+                                         <a href="#" class="person__col-net person__col-net--limit">
+                                            Пивоман
+                                         </a>
+                                    </div>
+                                    <div class="person__col ">
+                                         <div class="person__col-title  person__col-title--content">Роль</div>
+                                         <div class="person__col-wrapper-role">
+                                            <div class="person__col-role">
+                                                <span class="person__col-net person__col-net--role">Оператор точки</span>
+                                           
+                                            </div>
+                                         
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__top">
+                        <a href="#">
+                            <img src="./imgs/icon/logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        
+                    </div>
+                    <div class="footer__text">
+                        Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации просьба обращаться к нашим менеджерам!
+                         Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+                    </div>
+                </div>
+            </footer>
+            <!-- menu fixed for mobile -->
+            <nav class="menu-mobile">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 8H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 16H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 24H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                  
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                      
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                 
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                             
+                        </a>     
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="email-modal" class="email-modal">
+            <div class="email-modal__contenair">
+                <div class="email-modal__content">
+                    <div class="email-modal__close-button" data-fancybox-close>
+                        <svg  width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="26" height="26" rx="8" fill="white"/>
+                            <g clip-path="url(#clip0_71_2174)">
+                            <path d="M22.1667 3.83398L3.83337 22.1673" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.83337 3.83398L22.1667 22.1673" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_71_2174">
+                            <rect width="22" height="22" fill="white" transform="translate(2 2)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>  
+                    </div>
+                   <div class="email-modal__text">
+                        Письмо вашему партнеру отправлено. Статус его подтверждения можно отслеживать на странице <a href="#">Дочерние партнеры</a>
+                   </div>
+                 <div class="email-modal__button-wrapper">
+                    <a href="#" class="email-modal__button btn">ОК</a>
+                 </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./scripts/dashbord.js"></script>
+</body>
+</html>

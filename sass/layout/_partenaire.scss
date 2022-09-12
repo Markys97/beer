@@ -1,0 +1,262 @@
+.partenaire{
+
+    &__content{
+        padding:50px 104px 0 88px ;
+    }
+    &__title{
+        margin-bottom: 48px;
+    }
+    &__header{
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            gap: 32px;
+        }
+        &-bottom{
+            display: flex;
+
+            flex-direction: column;
+            width: 100%;
+            gap: 24px 16px;
+          
+         
+        }
+    }
+    &__input{
+       
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        height: 36px;
+        .form__input{
+            height: 100%;
+            input{
+                padding-left: 48px;
+            }
+        }
+        &-icon{
+            position: absolute;
+            top: 50%;
+            left: 16px;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            svg{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+    }
+    &__filtre{
+        display: inline-flex;
+
+        min-width: 762px;
+        width: 100%;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    &__tags{
+        display: flex;
+    }
+    &__body{
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 32px 76px;
+    }
+    &__repere{
+        margin-top: 32px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #90A0B7;
+    }
+    &__select{
+        max-width: 285px;
+        width: 100%;
+       
+    }
+    &__container-add{
+        margin-top: 32px;
+    }
+    &__wrapper-btn{
+        flex-shrink: 0;
+    }
+
+    &__contenaire-pagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        
+    }
+   
+}
+@media screen and (max-width:1500px) {
+    .partenaire{
+        &__content{
+            padding: 50px 40px 0 80px ;
+        }
+        &__body{
+            gap: 32px 18px;
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .partenaire{
+        &__content{
+            padding:40px 32px 65px;
+          
+        }
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__header{
+           
+            &-bottom{
+                justify-content: unset;
+                align-items: unset;
+                flex-direction: column;
+                // width:100%;
+                gap: 32px 0px;
+             
+            }
+        }
+        &__input{
+           
+            max-width: 412px;
+            width: 100%;
+           
+           
+        }
+        &__filtre{
+            display: inline-flex;
+            max-width:unset;
+            min-width:unset;
+            width: 900px;
+            justify-content: unset;
+            gap:  24px;
+            flex-wrap: unset;
+
+        //  padding: 0 50px;
+            &-wrapper{
+                width: 100%;
+                // border: 1px solid;   
+                overflow: auto;
+            
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                    background-color: transparent;
+                  }
+            }
+        }
+    
+        &__body{
+            // margin-top: 32px;
+            // display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px 18px;
+        }
+        // &__repere{
+        //     margin-top: 32px;
+        //     font-family: 'Manrope';
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     font-size: 14px;
+        //     line-height: 22px;
+        //     letter-spacing: 0.02em;
+        //     color: #90A0B7;
+        // }
+    
+        // &__contenaire-pagination{
+        //     display: flex;
+        //     justify-content: center;
+        //     margin-top: 32px;
+            
+        // }
+       
+    }
+}
+@media screen and (max-width:767px) {
+    .partenaire{
+        padding-bottom: 64px;
+        &__btn{
+            display: flex;
+            justify-content: center;
+        }
+        &__content{
+            padding:40px 16px 65px;
+           
+        }
+        &__title{
+            margin-bottom: 32px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &__header{
+           
+          &-top{
+            flex-direction: column-reverse;
+            gap:32px 0 ;
+            // border: 1px solid red;
+            margin-bottom: 24px;
+          }
+        }
+        &__input{
+           
+            position: relative;
+            max-width:100%;
+            width: 100%;
+            height: 36px;
+            .form__input{
+                height: 100%;
+                input{
+                    padding-left: 48px;
+                }
+            }
+            &-icon{
+                position: absolute;
+                top: 50%;
+                left: 16px;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                svg{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+        }
+       
+        &__body{
+            // margin-top: 32px;
+            // display: grid;
+            grid-template-columns: repeat(1, 100%);
+            gap: 24px;
+        }
+        &__repere{
+            display: none;
+        }
+    
+        &__contenaire-pagination{
+
+            margin-top: 64px;
+            
+        }
+       
+       
+    }
+}
+

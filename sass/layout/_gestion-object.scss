@@ -1,0 +1,152 @@
+.gestion-object{  
+  
+   &__head{
+    margin-bottom: 32px;
+
+   }
+   &__title{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #323C47;
+    margin-bottom: 48px;
+    padding-left:  122px;
+    margin-top: 72px;
+   }
+   &__block-point{
+    margin-bottom: 32px;
+    margin-left: 122px;
+
+  
+   }
+   .partenaire__header-top{
+    margin-bottom: 32px;
+    padding: 0 104px  0 122px ;
+   
+   }
+   &__body{
+    padding: 0 104px  0 122px ;
+   }
+   &__row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 48px;
+   }
+   &__tabs{
+    position: relative;
+   }
+   &__content{
+  
+   }
+   .partenaire__repere{
+    margin-top:24px;
+   }
+
+   .partenaire__contenaire-pagination{
+    margin-top: 16px;
+   }
+}
+
+.tab-box{
+   display: none;
+   &--active{
+    display: block;
+   }
+}
+@media screen and (max-width:1500px){
+    .gestion-object{
+           .partenaire__header-top{
+            padding: 0 40px  0 82px ;
+           }
+           &__title{
+            padding: 0 40px  0 82px ;
+           }
+           &__body{
+            padding: 0 40px  0 82px ;
+           }
+           &__row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+           
+           }
+           .partenaire__repere{
+            margin-top:24px;
+           }
+        
+           .partenaire__contenaire-pagination{
+            margin-top: 16px;
+           }
+           &__block-point{
+            margin-left: 88px;
+           }
+    }  
+}
+
+
+@media screen and (max-width:1200px){
+    .gestion-object{
+           .partenaire__header-top{
+            padding: 0 32px;
+           }
+           &__body{
+            padding: 0 32px;
+           }
+           &__row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px 48px;
+           }
+           .partenaire__repere{
+            margin-top:24px;
+           }
+           &__block-point{
+            margin-left: 32px;
+
+           }
+           &__title{
+            padding-left:  32px;
+            margin-top: 48px;
+            margin-bottom: 40px;
+           }
+        
+           .partenaire__contenaire-pagination{
+            margin-top: 16px;
+           }
+    }
+}
+@media screen and (max-width:767px){
+    .gestion-object{
+           .partenaire__header-top{
+            margin-bottom: 40px;
+            padding: 0 16px;
+           }
+           &__body{
+            padding: 0 16px;
+           }
+           &__row{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px 0;
+           }
+           .partenaire__repere{
+            margin-top:24px;
+           }
+           &__block-point{
+            margin-left: 16px;
+
+           }
+           &__title{
+            padding-left:  16px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+           }
+           .partenaire__contenaire-pagination{
+            margin-top: 56px;
+           }
+    }
+}
+
+

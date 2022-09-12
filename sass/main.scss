@@ -1,0 +1,19 @@
+@import './reset/reset';
+
+// global style
+@import './util/global';
+
+// components
+@import './component/lib';
+
+// style for pages layout ( section or big block)
+@import './layout/header';
+@import './layout/sidebar';
+@import './layout/dashbord';
+@import './layout/footer';
+@import './layout/signup';
+@import './layout/subsidiary';
+@import './layout/partenaire';
+@import './layout/menu-mobile';
+@import './layout/redaction-partner';
+@import './layout/gestion-object';

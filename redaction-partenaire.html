@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Дашборд</title>
+</head>
+<body id="dashbor">
+    <div class="page">
+        <aside class="page-sidebar">
+            <nav class="menu-left">
+                <ul class="menu-left__list">
+                    <li class="menu-left__item menu-left__item--logo">
+                        <a href="#" class="logos__long">
+                            <img src="./imgs/icon/logo.svg" alt="logo site">
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дашборд</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                                
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="menu-left__link-text">Объекты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--active">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 20.9999V18.9999C21.9993 18.1136 21.7044 17.2527 21.1614 16.5522C20.6184 15.8517 19.8581 15.3515 19 15.1299" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.12988C16.8604 3.35018 17.623 3.85058 18.1676 4.55219C18.7122 5.2538 19.0078 6.11671 19.0078 7.00488C19.0078 7.89305 18.7122 8.75596 18.1676 9.45757C17.623 10.1592 16.8604 10.6596 16 10.8799" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дочерние партнеры</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8965 14.0478L19.4701 18.3469C18.788 19.4234 17.9048 20.3624 16.8659 21.1109C15.5554 22.0552 14.0358 22.6684 12.437 22.8982C10.8381 23.128 9.20743 22.9675 7.68402 22.4305C6.16061 21.8935 4.78973 20.9959 3.68837 19.8144C2.58701 18.6328 1.78787 17.2023 1.35913 15.6449C0.930401 14.0876 0.884809 12.4496 1.22625 10.8709C1.56769 9.29207 2.28602 7.81933 3.31995 6.57831C4.1396 5.5945 5.13829 4.77946 6.25996 4.17455L9.94667 13.0287C10.1309 13.4713 10.468 13.8329 10.8965 14.0478ZM12.0437 8.53842L9.05743 1.44215C10.0655 1.13221 11.1182 0.982858 12.1769 1.00156C13.2355 1.02027 14.2824 1.20672 15.2788 1.55208L12.0437 8.53842ZM18.0548 3.59221C18.9245 4.10257 19.7139 4.74239 20.3949 5.49126C21.301 6.48767 21.9969 7.65666 22.4407 8.92826C22.8845 10.1999 23.0673 11.5479 22.978 12.8918C22.9108 13.9018 22.6911 14.8938 22.3279 15.8345L14.2979 11.7704L18.0548 3.59221Z" stroke="#90A0B7" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Отчеты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15L15.5 11.5" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.3 18C20.7 17 21 15.8 21 14.6C21 9.8 17 6 12 6C7 6 3 9.8 3 14.6C3 15.8 3.3 17 3.7 18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                            <span class="menu-left__link-text">Тарифы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Заказы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Товары</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--bottom" data-off="true">
+                        <a href="javascript:void();" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-icon">
+                                <path d="M11 17L6 12L11 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 17L13 12L18 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                                
+                            <span class="menu-left__link-text">Свернуть</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="page-body page-body--one">
+            <header class="header">
+                <div class="header__container">
+                    <nav class="header__menu menu-top">
+                        <ul class="menu-top__list">
+                            <li class="menu-top__item">
+                                <a href="#">
+                                    <div class="menu-top__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="menu-top__icon-number">
+                                            <span class="menu-top__icon-number-qt">99</span> <span  class="menu-top__icon-number-sign">+</span>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="menu-top__text">
+                                        Заказы
+                                    </div>
+                                    
+                                </a>
+                                <div class="menu-top__popUp" >
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Новые заказы</span>
+                                        <span class="compte__number">99+</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Необработанные заказы</span>
+                                        <span class="compte__number compte__number--blue">20</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Заказы в работе</span>
+                                        <span class="compte__number compte__number--green">5</span>
+                                    </a>
+                                  <div class=" menu-top__popUp-contenairLink">
+                                    <a href="#" class="menu-top__popUp-link">На страницу заказов</a>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="menu-top__item">
+                               <a href="#">
+                                <div class="menu-top__icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 10.668C24 8.54624 23.1571 6.51141 21.6569 5.01111C20.1566 3.51082 18.1217 2.66797 16 2.66797C13.8783 2.66797 11.8434 3.51082 10.3431 5.01111C8.84286 6.51141 8 8.54624 8 10.668C8 20.0013 4 22.668 4 22.668H28C28 22.668 24 20.0013 24 10.668Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3067 28C18.0723 28.4041 17.7358 28.7395 17.331 28.9727C16.9262 29.2059 16.4672 29.3286 16 29.3286C15.5329 29.3286 15.0739 29.2059 14.6691 28.9727C14.2642 28.7395 13.9278 28.4041 13.6934 28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <div class="menu-top__icon-number">
+                                        <span class="menu-top__icon-number-qt">95</span> <span  class="menu-top__icon-number-sign">+</span>
+                                    </div>
+                                        
+                                </div>
+                                <div class="menu-top__text">
+                                    Уведомления
+                                </div>
+                               </a>
+                               <div class="menu-top__popUp menu-top__popUp--notification">
+                                <a href="#" class="notification notification--new">
+                                    <div class="notification__text">Заказ №123456 оплачен</div>
+                                    <div class="notification__date">Сейчас</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                    <div class="notification__date">Вчера в 18:06</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">08.06 исекает срок действия вашего тарифа. Продлите подписку для продолжения работы.</div>
+                                    <div class="notification__date">26 июн в 19:00</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Тариф “Продвинутый владелец” активирован</div>
+                                    <div class="notification__date">03 мая в 14:56</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Заказ №45897856 оплачен</div>
+                                    <div class="notification__date">10 мар в 14:56</div>
+                                </a>
+                              <div class=" menu-top__popUp-contenairLink">
+                                <a href="#" class="menu-top__popUp-link">Показать все</a>
+                              </div>
+                               </div>
+                            </li>
+                            <li class="menu-top__item menu-top__item--mobile">
+                                <a href="#" class="menu-top__logo">
+                                    <img src="./imgs/picture/logo.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--big">
+                                    <img src="./imgs/picture/logo-court.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--small">
+                                </a>
+                            </li>
+                            <li class="menu-top__item">
+                                <a href="#" class="menu-top__user">
+                                    <div class="menu-top__user-name">
+                                        Петров Петрович
+                                    </div>
+                                    <div class="menu-top__user-img">
+                                        <img src="./imgs/picture/user.png" alt=" user profil picture">        
+                                    </div>
+                                </a>
+                                <div class="menu-top__popUp menu-top__popUp--session">
+                                   <a href="#" class="link-user-pop link-user-pop--link">Личные данные</a>
+                                   <a href="#" class="link-user-pop link-user-pop--link">Безопасность</a>
+                                   <a href="#" class="link-user-pop link-user-pop--btn">Выйти</a>
+                                 
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="partner-writing">
+                <div class="partner-writing__container">
+                    <div class="partner-writing__content">
+                        <div class="partner-writing__header block-header">
+                            <div class="block-header__info">
+                                <a href="#" class="block-header__link-prev" style="display: block">
+                                    <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#109CF1"></path>
+                                    </svg>
+                                </a>
+                               <div class="block-header__body">
+                                    <div class="block-header__img">
+                                        <img src="./imgs/picture/avatar.png" alt="person">
+                                    </div>
+                                    <div class="block-header__data">
+                                        <div class="block-header__name">Новослабодская Регина Олеговна</div>
+                                        <div class="block-header__work">ИП “Ромашка”</div>
+                                        <div class="block-header__status">Ожидает подтверждения</div>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="block-header__button-wrapper">
+                                <a href="javascript:void(0)" class="btn btn-save btn-js">Сохранить изменения</a>
+                            </div>
+                        </div>
+                        <div class="partner-writing__information" >
+                            <div class="partner-writing__information-content">
+                                <h2 class="partner-writing__title">Информация о франчайзи</h2>
+                                <form class="partner-writing__form form">
+                                    <div class="form__item">
+                                        <div class="form__input">
+                                            <input type="text" placeholder="ИП “Ромашка”" id="ip" value="ИП “Ромашка”">
+                                            <div class="form__icon form__icon--edit">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>      
+                                            </div>
+                                        </div>
+                                        <label for="ip" class="form__label show-label">Наименование юр. лица</label>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__input">
+                                            <input type="text" placeholder="ИНН" id="inn" value="1253841002">
+                                            <div class="form__icon form__icon--edit">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>      
+                                            </div>
+                                        </div>
+                                        <label for="inn" class="form__label show-label">ИНН</label>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__input">
+                                            <input type="text" placeholder="КПП" id="kpp" value="1253841002">
+                                            <div class="form__icon form__icon--edit">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>      
+                                            </div>
+                                        </div>
+                                        <label for="kpp" class="form__label show-label">КПП</label>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__input">
+                                            <input type="text" placeholder="ОГРН" id="ogph" value="1026800149301">
+                                            <div class="form__icon form__icon--edit">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>      
+                                            </div>
+                                        </div>
+                                        <label for="ogph" class="form__label show-label">ОГРН</label>
+                                    </div>
+                                </form>
+                                   
+                               
+                            </div>
+                        </div>
+                        <div class="partner-writing__personel-data personel-data ">
+                            <div class="personel-data__content"> 
+                                <h2 class="personel-data__title">Личные данные</h2>
+                                <form action="#" class="form">
+                                        
+                                        <div class="personel-data__row">
+                                           <label for="file">
+                                            <div class="personel-data__img-wrapper">
+                                                <div class="personel-data__img">
+                                                    <img src="./imgs/icon/avatar.svg" alt="">
+                                                </div>
+                                                <div class="personel-data__float">
+                                                    <img src="./imgs/icon/image.svg" alt="image icon">
+                                                </div>
+                                                <div class="personel-data__icon">
+                                                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_d_628_23235)">
+                                                        <circle cx="27.2312" cy="23.2312" r="23.0769" fill="white"/>
+                                                        </g>
+                                                        <path d="M15.6914 29.9619V34.7696H20.4991L34.6786 20.5901L29.8709 15.7824L15.6914 29.9619ZM38.3965 16.8721C38.8965 16.3721 38.8965 15.5645 38.3965 15.0645L35.3965 12.0645C34.8965 11.5645 34.0888 11.5645 33.5888 12.0645L31.2427 14.4106L36.0504 19.2183L38.3965 16.8721Z" fill="#334D6E"/>
+                                                        <defs>
+                                                        <filter id="filter0_d_628_23235" x="0.154297" y="0.154297" width="54.1543" height="54.1538" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                        <feOffset dy="4"/>
+                                                        <feGaussianBlur stdDeviation="2"/>
+                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.235294 0 0 0 0 0.278431 0 0 0 0.08 0"/>
+                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_628_23235"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_628_23235" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                    </svg>
+                                                        
+                                                </div>
+                                            </div>
+                                            <input type="file" id="file" >
+                                           </label>
+                                            <div class="personel-data__items" data-target>
+                                                <div class="form__item">
+                                                    <div class="form__input">
+                                                        <input type="text" placeholder="Фамилия" id="first-name" value="Новослабодская">
+                                                        <div class="form__icon form__icon--edit">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>      
+                                                        </div>
+                                                    </div>
+                                                    <label for="first-name" class="form__label show-label">Фамилия</label>
+                                                </div>
+                                                <div class="form__item">
+                                                    <div class="form__input">
+                                                        <input type="text" placeholder="Имя" id="first-name" value="Регина">
+                                                        <div class="form__icon form__icon--edit">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>      
+                                                        </div>
+                                                    </div>
+                                                    <label for="name" class="form__label show-label">Имя</label>
+                                                </div>
+                                                <div class="form__item">
+                                                    <div class="form__input">
+                                                        <input type="text" placeholder="Отчество" id="pseudo" value="Олеговна">
+                                                        <div class="form__icon form__icon--edit">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>      
+                                                        </div>
+                                                    </div>
+                                                    <label for="pseudo" class="form__label show-label">Отчество</label>
+                                                </div>
+                                                <div class="form__item">
+                                                    <div class="form__input">
+                                                        <input type="email" placeholder="Почта" id="email" value="novoslabodskaya@mail.ru">
+                                                        <div class="form__icon form__icon--edit">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>      
+                                                        </div>
+                                                    </div>
+                                                    <label for="email" class="form__label show-label">Почта</label>
+                                                </div>
+                                                <div class="form__item">
+                                                    <div class="form__input">
+                                                        <input type="tel" placeholder="Телефон" id="tel" >
+                                                        <div class="form__icon form__icon--edit">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>      
+                                                        </div>
+                                                    </div>
+                                                    <label for="tel" class="form__label ">Телефон</label>
+                                                </div>
+                                                <div class="form__item">
+                                                    <div class="form__input">
+                                                        <input type="date" placeholder="Дата рождения" id="hbd"  value="2030-12-31" disabled>
+                                                        
+                                                    </div>
+                                                    <label for="hbd" class="form__label show-label">Дата рождения</label>
+                                                </div>
+                                                <div class="subsidiary__form-row subsidiary__form-row--radio">
+                                                    <div class="form__radio">
+                                                         <input type="radio" id="girl" name="genre" class="form__radio-input">
+                                                         <label for="girl" class="form__radio-label">Женщина</label>
+                                                    </div>
+                                                    <div class="form__radio">
+                                                         <input type="radio" id="boy" name="genre" class="form__radio-input">
+                                                         <label for="boy" class="form__radio-label">Мужчина</label>
+                                                    </div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="partner-writing__legal-entitie">
+                            <div class="partner-writing__legal-entitie-content">
+                                <div class="partner-writing__legal-entitie-head">
+                                    <h2 class="partner-writing__title partner-writing__legal-entitie-title">Юридические лица</h2>
+                                    <a href="javascript:void()" class="btn">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_508_8994)">
+                                            <path d="M7.04978 1.15822V12.9433" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1.15723 7.05078H12.9423" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_508_8994">
+                                            <rect width="14" height="14" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span class="btn__text">Создать партнера</span>
+                                    </a>
+                                </div>
+                               <div class="partner-writing__legal-entitie-row">
+                                    <div class="partner-writing__legal-entitie-item legal-entitie">
+                                        <div class="legal-entitie__content">
+                                            <div class="legal-entitie__row">
+                                                <a href="javascript:void()" class="legal-entitie__icon ">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </a>
+                                                <div class="legal-entitie__body">
+                                                    <div class="legal-entitie__work">ИП “Пивасик”</div>
+                                                    <div class="legal-entitie__status">Подтвержден</div>
+                                                </div>
+                                                <a href="javascript:void()" class="legal-entitie__icon legal-entitie__icon--delete">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.6">
+                                                        <path d="M3 6H21" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 11V17" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M14 11V17" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                    </svg>
+                                                        
+                                                </a>
+                                            </div>
+                                            <ul class="legal-entitie__list">
+                                                <li class="legal-entitie__item">
+                                                    <span class="legal-entitie__title">ИНН</span>
+                                                    <span class="legal-entitie__number">1253841002</span>
+                                                </li>
+                                                <li class="legal-entitie__item">
+                                                    <span class="legal-entitie__title">КПП</span>
+                                                    <span class="legal-entitie__number">149575682</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="partner-writing__legal-entitie-item legal-entitie">
+                                        <div class="legal-entitie__content">
+                                            <div class="legal-entitie__row">
+                                                <a href="javascript:void()" class="legal-entitie__icon ">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </a>
+                                                <div class="legal-entitie__body">
+                                                    <div class="legal-entitie__work">ИП “Пивасик”</div>
+                                                    <div class="legal-entitie__status">Подтвержден</div>
+                                                </div>
+                                                <a href="javascript:void()" class="legal-entitie__icon legal-entitie__icon--delete">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.6">
+                                                        <path d="M3 6H21" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 11V17" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M14 11V17" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                    </svg>
+                                                        
+                                                </a>
+                                            </div>
+                                            <ul class="legal-entitie__list">
+                                                <li class="legal-entitie__item">
+                                                    <span class="legal-entitie__title">ИНН</span>
+                                                    <span class="legal-entitie__number">1253841002</span>
+                                                </li>
+                                                <li class="legal-entitie__item">
+                                                    <span class="legal-entitie__title">КПП</span>
+                                                    <span class="legal-entitie__number">149575682</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="partner-writing__legal-entitie-item legal-entitie">
+                                        <div class="legal-entitie__content">
+                                            <div class="legal-entitie__row">
+                                                <a href="javascript:void()" class="legal-entitie__icon ">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        
+                                                </a>
+                                                <div class="legal-entitie__body">
+                                                    <div class="legal-entitie__work">ИП “Пивасик”</div>
+                                                    <div class="legal-entitie__status">Подтвержден</div>
+                                                </div>
+                                                <a href="javascript:void()" class="legal-entitie__icon legal-entitie__icon--delete">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g opacity="0.6">
+                                                        <path d="M3 6H21" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M19 6V20C19 21 18 22 17 22H7C6 22 5 21 5 20V6" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8 6V4C8 3 9 2 10 2H14C15 2 16 3 16 4V6" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 11V17" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M14 11V17" stroke="#F44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                    </svg>
+                                                        
+                                                </a>
+                                            </div>
+                                            <ul class="legal-entitie__list">
+                                                <li class="legal-entitie__item">
+                                                    <span class="legal-entitie__title">ИНН</span>
+                                                    <span class="legal-entitie__number">1253841002</span>
+                                                </li>
+                                                <li class="legal-entitie__item">
+                                                    <span class="legal-entitie__title">КПП</span>
+                                                    <span class="legal-entitie__number">149575682</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="partner-writing__roles roles">
+                            <div class="roles__container">
+                                <div class="roles__content">
+                                    <h2 class="roles__title">Роли</h2>
+                                    <div class="roles__row">
+                                        <div class="roles__item">
+                                            <div class="roles__item-content">
+                                                <div class="roles__item-title">Администратор точки</div>
+                                                <div class="roles__item-body">
+                                                    <div class="roles__item-img">
+                                                        <img src="./imgs/picture/net-1.png" alt="product">
+                                                    </div>
+                                                    <div class="roles__item-info">
+                                                        г. Екатеринбург, ул. Старославянский бульвар, 15
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roles__item">
+                                            <div class="roles__item-content">
+                                                <div class="roles__item-title">Администратор точки</div>
+                                                <div class="roles__item-body">
+                                                    <div class="roles__item-img">
+                                                        <img src="./imgs/picture/net-1.png" alt="product">
+                                                    </div>
+                                                    <div class="roles__item-info">
+                                                        г. Екатеринбург, ул. Старославянский бульвар, 15
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roles__item">
+                                            <div class="roles__item-content">
+                                                <div class="roles__item-title">Администратор точки</div>
+                                                <div class="roles__item-body">
+                                                    <div class="roles__item-img">
+                                                        <img src="./imgs/picture/net-1.png" alt="product">
+                                                    </div>
+                                                    <div class="roles__item-info">
+                                                        г. Екатеринбург, ул. Старославянский бульвар, 15
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roles__item">
+                                            <div class="roles__item-content">
+                                                <div class="roles__item-title">Администратор точки</div>
+                                                <div class="roles__item-body">
+                                                    <div class="roles__item-img">
+                                                        <img src="./imgs/picture/net-1.png" alt="product">
+                                                    </div>
+                                                    <div class="roles__item-info">
+                                                        г. Екатеринбург, ул. Старославянский бульвар, 15
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partner-writing__button-wrapper">
+                            <a href="javascript:void(0)" class="btn btn--outline">Удалить партнера</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <footer class="footer ">
+                <div class="footer__container">
+                    <div class="footer__top">
+                        <a href="#">
+                            <img src="./imgs/icon/logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        
+                    </div>
+                    <div class="footer__text">
+                        Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации просьба обращаться к нашим менеджерам!
+                         Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+                    </div>
+                </div>
+            </footer>
+             <!-- menu fixed for mobile -->
+             <nav class="menu-mobile menu-mobile--btn">
+                <a href="javascript:void(0)" class="btn menu-mobile--btn__btn btn-save">Сохранить изменения</a>
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 8H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 16H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 24H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                  
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                      
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                 
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                             
+                        </a>     
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+  
+    <script src="./scripts/dashbord.js"></script>
+
+    <script src="./scripts/form.js"></script>
+</body>
+</html>

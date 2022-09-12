@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Дашборд</title>
+</head>
+<body id="signform">
+    <div class="signform">
+        <div class="signform__container">
+            <div class="signform__content">
+           
+              <form action="#" class="form" autocomplete="off">
+                    <a href="#" class="form__logo form__logo--signin">
+                        <img src="./imgs/icon/logoSvg.svg" alt="logo site">
+                    </a>
+                    <div class="form__item">
+                        <div class="form__input">
+                            <input type="text" placeholder="Логин" id="login">
+                        </div>
+                        <label for="login" class="form__label">Логин</label>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__input form__input--password">
+                            <input type="password" placeholder="Пароль" id="password" class="">
+                            <div class="form__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z" stroke="#C2CFE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#C2CFE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path class="eye-bare" d="M2 2L22 22" stroke="#C2CFE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                        
+                            </div>
+                        </div>
+                        <label for="password" class="form__label">Пароль</label>
+                    </div>
+
+                    <a href="#" class="form__link form__link--black signform__forgetCode">Забыли пароль?</a>
+                  
+                    <div class="form__btn-wrapper">
+                        <div class="form__submit">
+                            <input type="submit" value="Войти">
+                        </div>
+                    </div>
+                <div class="form__link-container">
+                    <a href="#" class="form__link">У меня есть аккаунт</a>
+                </div>
+                    
+
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/form.js"></script>
+</body>
+</html>
