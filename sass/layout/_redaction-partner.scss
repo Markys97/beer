@@ -225,28 +225,10 @@
             margin-bottom: 24px;
         }
        
-        // .form{
-        //     margin: 0;
-        //     max-width: 912px;
-        //     display: grid;
-        //     gap: 32px;
-        //     grid-template-columns: repeat(2,1fr);
-        //     #hbd{
-        //         color:#90A0B7;
-        //     }
-        //     input{
-        //         padding-right: calc(24px + 20px);
-        //     }
-        //     &__icon{
-        //       &--edit{
-        //         z-index: 100;
-        //       display: none;
-        //       cursor: pointer;
-        //       &:hover{display: block;}
-        //       }
-        //     }
-    
-        // }
+        .form{
+            max-width: unset;
+            gap: 16px;    
+        }
         // input{
         //      color: #323C47;
         //      &::-webkit-inner-spin-button,
@@ -295,7 +277,7 @@
           }
         }
         &__information{
-            margin-top: 54px;
+            margin-top: 40px;
             padding: 16px;
             height: auto;
         }

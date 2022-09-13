@@ -182,6 +182,19 @@
 }
 
 
+@media screen and (max-width:1500px){
+    .menu-left{
+        &__item{
+            &:hover{
+                svg:last-child{
+                 display: block;
+                }
+
+               }
+        }
+    }
+}
+
 @media screen and (max-width:1200px) {
     .page-sidebar{
   

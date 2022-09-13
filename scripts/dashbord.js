@@ -249,7 +249,13 @@ if(selectInputHead !== null){
     selectInputHead.addEventListener('click',function(e){
   
         selectInputBody.classList.toggle('show-body-select')
-        this.classList.toggle('bodyIsOpen')
+        // this.classList.toggle('bodyIsOpen')
+
+        if(selectInputBody.classList.contains('show-body-select')){
+            this.classList.add('bodyIsOpen')
+        }else{
+            this.classList.remove('bodyIsOpen')
+        }
        
     })
 }
@@ -258,7 +264,8 @@ selectOptions.forEach((selectOption,i,tab) =>{
         selectOption.addEventListener('click',function(e){
             selectText.innerHTML=this.innerHTML
             selectInputBody.classList.remove('show-body-select');
-            this.classList.remove('bodyIsOpen')
+        
+            selectInputHead.classList.remove('bodyIsOpen')
             tab.forEach(item=>{
                 item.classList.remove('select-input__link--active')
             })
@@ -317,13 +324,20 @@ let roleLists= document.querySelectorAll('.item-partenaire__roles');
 buttonMores.forEach((buttonMore,index)=>{
     if(buttonMore !== null){
         buttonMore.addEventListener('mouseenter',function(e){
-            roleLists[index].classList.add('d-block')
+            roleLists[index].classList.add('d-visible')
         })
+
         buttonMore.addEventListener('mouseleave',function(e){
-            roleLists[index].classList.remove('d-block')
+            roleLists[index].classList.remove('d-visible')
         })
     }
 })
+
+
+
+
+
+
 
 // handler btn role for Управление дочерними партнерами
 let personRoleBtn= document.querySelector('.person__col-role-btn');
@@ -331,16 +345,13 @@ let personRoleList= document.querySelector('.person__col-role-list');
 // show listRole
 if(personRoleBtn !==null){
     personRoleBtn.addEventListener('mouseenter',function(e){
-        personRoleList.classList.add('d-block')
+        personRoleList.classList.add('d-visible')
     })
 // hide listRole
     personRoleBtn.addEventListener('mouseleave',function(e){
-        personRoleList.classList.remove('d-block')
+        personRoleList.classList.remove('d-visible')
     })
 }
-
-
-
 
 // handler menu mobile fixed on bottom of screen
 var lastScrollTop = 0;
@@ -433,11 +444,10 @@ tabMenuItems.forEach(function(tabMenuItem, index,arr){
 
 
 // handler pages layout 
-
 let section =document.querySelector('.js-params');
 if (section !== null){
     let params = section.getAttribute('data-class');
-    pageContent.className +=params;
+    pageContent.className += ' ' + params;
     
 }
 

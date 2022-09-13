@@ -166,6 +166,12 @@
             }
             &:checked + label{
                 color: #334D6E;
+                transition: all 300ms ease-in;
+            }
+            &:checked + label{
+              &:hover{
+                color: #90A0B7;
+              }
             }
             
         }
@@ -182,6 +188,7 @@
             letter-spacing: 0.02em;
             color: #C2CFE0;
             cursor: pointer;
+            transition: all 300ms ease;
             &::before{
                 content: '';
                 display: block;
@@ -193,6 +200,7 @@
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
+                transition: all 300ms ease;
             }
             &::after{
                 content: '';
@@ -205,6 +213,17 @@
                 left: 4px;
                 transform: translateY(-50%);
                 background: #109CF1;
+                transition: all 300ms ease;
+            }
+            &:hover{
+
+                color: #90A0B7;
+                &::before{
+                    border: 2px solid#DAE2EC;
+                }
+                &::after{
+                    display: none;
+                }
             }
         }
     }
@@ -230,6 +249,11 @@
     background: #FFFFFF;
     transition: all 300ms ease;
     padding: 0 24px;
+    &:first-child{
+      
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
     
     &:hover{
         background: #F6F8FB;
@@ -273,6 +297,11 @@
     display: inline-block;
     padding: 16px 12px;
     border-bottom: 1px solid #C2CFE0;
+    &:first-child{
+      
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 
     width: 100%;
     &:hover{
@@ -315,6 +344,11 @@
     font-family: 'Manrope';
     font-style: normal;
     transition: all 300ms ease;
+    &:first-child{
+      
+        border-top-left-radius:12px;
+        border-top-right-radius:12px;
+    }
     &:hover{
         background: #F6F8FB;
     }
@@ -453,7 +487,7 @@
         background: #FFFFFF;
         border: 1px solid #C2CFE0;
         border-radius: 8px;
-        transition: all 300ms ease;
+        // transition: all 300ms ease;
         cursor: pointer;
         &-text{
             font-family: 'Manrope';
@@ -715,7 +749,8 @@
         }
     }
     &__roles{
-       display: none;
+       
+        // pointer-events: none;
         position: absolute;
         top: 23px;
         background: #FFFFFF;
@@ -724,13 +759,16 @@
         padding: 8px 16px;
         width: 212px;
         cursor: default;
+        visibility: hidden;
+        transition: all 300ms ease;
+        opacity: 0;
         &:hover{
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }
+        
     
-        &:hover{
-            display: block;
-        }
+        
         li+li{
             margin-top: 4px;
         }
@@ -1001,9 +1039,11 @@
         position: relative;
         cursor: pointer;
         position: relative;
+        // border: 1px solid;
         &::after{
             content: '';
             display: block;
+   
             position: absolute;
             top: 0;
             left: 0;
@@ -1011,22 +1051,27 @@
             height: 100%;
             z-index: 10;
             background: #000;
-            opacity: .2;
+           
             border-radius: 50%;
-            // transition: visibility 300ms ease;
-            visibility: hidden;
+            transition: all 300ms ease;
+            opacity: 0;
+          
          
         }
         &:hover{
             &::after{
-                visibility: visible;
+                opacity: .2;
+                transition: all 300ms ease;
             }
             .personel-data__float{
-                visibility: visible;
+
+             opacity: 1;
+                transition: all 300ms ease;
              
             }
             .personel-data__icon{
-                visibility: hidden;
+              opacity: 0;
+              transition: all 300ms ease;
                    
             }
         }
@@ -1034,6 +1079,7 @@
     &__img{
         width: 200px;
         height: 200px;
+        // border: 1px solid red;
         img{
             display: inline-block;
             width: auto;
@@ -1051,8 +1097,8 @@
         top: 50%;
         transform: translate(-50%,-50%);
         z-index: 50;
-        visibility: hidden;
-        // transition: visibility 300ms ease;
+        opacity: 0;
+        transition: all 300ms ease;
    
     
         img{
@@ -1067,7 +1113,7 @@
         height: 47px;
         right:0 ;
         bottom: 0;
-        visibility: visible;
+        opacity: 1;
     
    
         img{
@@ -1315,6 +1361,10 @@
             letter-spacing: 0.02em;
             color: #334D6E;
             white-space: nowrap;
+           transition: all 300ms ease;
+           &:hover{
+            color:#109CF1;
+           }
         }
         &-img{
             width: 32px;
@@ -1328,6 +1378,9 @@
         }
     }
     &__text{
+        &--title{
+            min-width: 48px;
+        }
         &--blue{
             color: #334D6E;
             &-light{
@@ -1546,7 +1599,8 @@
     }
 
     .legal-entitie{
-     
+        box-shadow:unset;
+        border: 1px solid #F0F3F8;
         width: unset;
         min-height: 204px;
         &__icon{
@@ -1575,8 +1629,8 @@
         }
         &__item{
             background: #FFFFFF;
-            box-shadow: 0px 0px 19px rgba(226, 236, 249, 0.64);
-            border-radius: 30px;
+            box-shadow: unset;
+            border: 1px solid #F0F3F8;
             &-content{
                 padding: 32px 24px 40px;
             }
@@ -1797,6 +1851,8 @@
        
         &__title{
             margin-bottom: 24px;
+            font-size: 18px;
+            line-height: 22px;
         }
         &__content{
             padding: 16px;
@@ -1829,12 +1885,14 @@
        
     }
     .roles{
-
+     
         &__content{
             padding:16px;
         }
         &__title{
-            margin-bottom:24px; 
+            margin-bottom:24px;
+            font-size: 18px;
+            line-height: 22px;
         }
         &__row{
             display: grid;
@@ -1842,7 +1900,27 @@
             gap: 24px 40px;
         }
         &__item{
+            box-shadow: unset;
+            border-radius: unset;
+            position: relative;
+            border: none;
+            border-bottom: 1px solid #F0F3F8;
+            &:last-child{
+                border-bottom: unset;
+            }
+            // &::after{
+            //     content: '';
+            //     display: block;
+            //     position: absolute;
+            //     height: 1px;
+            //     width: calc(100% - 16px);
+            //     left: 50%;
+            //     transform: translateX(-50%);
+            //     bottom: 0;
+            //     background: #F0F3F8;;
 
+
+            // }
             &-content{
                 padding: 12px 8px;
             }
@@ -1851,4 +1929,6 @@
             margin-bottom: 16px;
         }
     }
+
+ 
 }
