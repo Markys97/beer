@@ -78,10 +78,16 @@
     &__img{
         width: 100px;
         height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 50%;
+        flex-shrink: 0;
         img{
             width: auto;
             height: 100%;
-            border-radius: 50%;
+          
         }
         
     }
@@ -127,9 +133,7 @@
         display: flex;
         flex-direction: column;
         gap: 1.6rem ;
-        &:hover{
-
-        }
+       
     
     }
 }
@@ -164,8 +168,13 @@
         height: 48px;
         transition: all 300ms ease;
         flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 50%;
+        flex-shrink: 0;
         img{
-            width: 100%;
+            width: auto;
             height: 100%;
         }
     }
@@ -297,8 +306,13 @@
     width: 48px;
     height: 48px;
     flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    flex-shrink: 0;
     img{
-        width: 100%;
+        width:auto;
         height: 100%;
     }
 }
@@ -388,6 +402,11 @@
 
             width: 48px;
             height: 48px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 50%;
+            flex-shrink: 0;
             img{
                 max-width: none;
                 height: 100%;
@@ -499,6 +518,11 @@
         &-img{
             width: 48px;
             height: 48px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 50%;
+            flex-shrink: 0;
             img{
                 max-width: none;
                 height: 100%;
@@ -588,9 +612,14 @@
         &-img{
             width: 48px;
             height: 48px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 50%;
+            flex-shrink: 0;
             img{
                 display: inline-block;
-            border-radius: 50%;
+
                 max-width: none;
                 height: 100%;
                 object-fit: cover;
@@ -733,56 +762,7 @@
 
     background:rgba(#323C47,0.2);
 }
-.email-modal{
-display: none;
-width: 710px;
-height: 252px;
-background: #FFFFFF;
-border-radius: 20px;
-position: relative;
 
-&__close-button{
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    right: 24px;
-    top: 24px;
-    cursor: pointer;
-    svg{
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-
-}
-&__content{
-    padding: 82px 89px;
-}
-&__text{
-    text-align: center;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #323C47;
-    a{
-        display: inline-block;
-        color: #109CF1;
-        border: none;
-        outline: none;
-        
-      
-    }
-}
-&__button-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-top: 41px;
-}
-}
 
 .fancybox__content>.carousel__button.is-close {
     display: none;
@@ -977,10 +957,14 @@ position: relative;
         &__img{
             width: 100px;
             height: 100px;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 50%;
             img{
                 width: auto;
                 height: 100%;
-                border-radius: 50%;
+               
             }
             
         }

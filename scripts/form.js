@@ -128,9 +128,9 @@
 $(document).ready(function(){
 
     // show label
-        let inputs= $('.form__input input');
+        let inputs= $('.form__input input ');
         let placeholder;
-        $(document).on('focus','.form__input input',function(e){
+        $(document).on('focus','.form__input input,.form__textarea textarea',function(e){
             let label=$(this).parents('.form__item').find('.form__label');
             let attrData= $(this).attr('data-noanimation')
             label.addClass('show-label');

@@ -1,0 +1,486 @@
+.object-redaction{
+    &__content{
+       
+       min-height: 800px;
+    }
+   
+    &__main{
+        margin-top: calc(48px + 92px);
+    }
+    &__top,&__bottom{
+        background: #FFFFFF;
+        box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+        border-radius: 30px;
+        &-content{
+            padding: 48px 32px;
+        }
+    }
+    &__title-block{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        color: #323C47;
+    }
+    &__title-top{
+        margin-bottom: 32px;
+    }
+    &__form{
+        max-width: 912px;
+        margin: unset;
+        &-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:32px;
+        }
+    }
+    &__employe{
+        margin-top: 40px;
+      &-left{
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+
+      }
+        &-title{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #323C47;
+        }
+        &-row{
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            gap: 0 24px;
+        }
+
+        &-img{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 50%;
+            flex-shrink: 0;
+          
+           
+            img{
+                display: inline-block;
+              
+                width:auto;
+                height: 100%;
+            }
+        }
+        &-name{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #334D6E;
+          
+            transition: all 300ms ease;
+            &:hover{
+                color: #58C0FF;
+            }
+             
+        }
+        &-btn{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+            color: #90A0B7;
+            transition: all 300ms ease;
+            transition: all 300ms ease;
+            text-decoration: underline;
+            text-decoration-color:white ;
+            &:hover{
+                text-decoration-color:#707683; ;
+                color: #707683;
+            }
+        }
+    }
+
+    &__confirm{
+       
+        margin-top: 40px;
+        margin-bottom: 32px;
+        &-text{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #323C47;
+            margin-bottom: 8px;
+             
+        }
+        &-list{
+            list-style-type: disc;
+            padding-left: 15px;
+            li + li{
+                margin-top: 8px;
+            }
+        }
+        &-listItem{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #323C47;
+            
+            &::marker{
+                color: #58C0FF;
+            }
+        }
+        &-row{
+          
+            width: 100%;
+            margin-top: 32px;
+            display: flex;
+
+            gap: 24px;
+            flex-wrap: wrap;
+           
+           
+        }
+       
+    }
+    &__file{
+        min-height: 122px;
+        label{
+            height: 100%;
+            display: flex;
+            gap: 0 40px;
+            .form__file-title{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+                color: #334D6E;
+            }
+            svg{
+                display: inline-block;
+                width: 58px;
+                height: 58px;
+                
+            }
+           
+        }
+        &-img{
+
+            input{
+                display: none;
+            }
+        }
+    
+    }
+    &__bottom{
+        margin-top: 32px;
+        &-title{
+            margin-bottom: 32px;
+        }
+        &-form{
+            max-width: unset;
+            margin: unset;
+        }
+        &-row{
+            display: flex;
+            gap: 0 72px;
+        }
+        &-result{
+            margin-bottom: 32px;
+        }
+        &-body{
+            flex-grow: 1;
+            .form__item + .form__item{
+                margin-top: 32px;
+            }
+        }
+        &-imgs{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px 32px;
+        }
+        &-formItemSmall{
+            max-width: 440px;
+        }
+    }
+    &__showImg{
+        position: relative;
+        // border: 1px solid;
+        height: 122px;
+        display: block;
+        cursor: pointer;
+        &:hover{
+         
+           .object-redaction__showImg{
+            &-img{
+              &::after{
+                opacity: 1;
+              }
+            }
+            &-row{
+                opacity: 1;
+            }
+           }
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            display: inline-flex;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 30px;
+          
+            &::after{
+                content: '';
+                display:  block;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+                opacity: 0;
+                transition: all 300ms ease;
+
+            }
+            img{
+               width: 100%;
+                height: auto;
+                object-fit: cover;
+              
+            }
+        }
+        &-row{
+            position: relative;
+            height: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            opacity: 0;
+            transition: all 300ms ease;
+        }
+        &-text{
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            
+        }
+    }
+    
+
+
+   
+   
+  
+}
+
+@media screen and (max-width:1200px) {
+    .object-redaction{
+        &__main{
+            margin-top: 40px;
+        }
+        &__top,&__bottom{
+
+            &-content{
+                padding: 32px;
+            }
+        }
+        &__title-top{
+            margin-bottom: 24px;
+        }
+        &__form{
+            &-grid{
+                gap:16px;
+            }
+        }
+        &__employe{
+           
+            &-row{
+                margin-top: 24px;
+            }
+           
+        }
+
+        &__confirm{
+
+           
+            &-row{
+              
+                width: 100%;
+                margin-top: 32px;
+                display: flex;
+              
+                gap: 24px;
+                flex-wrap: nowrap;
+                .card-1{
+                    flex-shrink: 0;
+                }
+               
+               
+            }
+           
+        }
+
+        &__bottom{
+            &-title{
+                margin-bottom: 24px;
+            }
+          
+            &-row{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px 0px;
+            }
+            &-result{
+                margin-bottom: 24px;
+               
+            }
+            &-body{
+                flex-grow: 1;
+                max-width: 100%;
+                .form__item + .form__item{
+                    margin-top: 24px;
+                }
+            }
+            &-imgs{
+             
+                flex-wrap: nowrap;
+                & > a , div{
+                    flex-shrink: 0;
+                }
+               
+            }
+        }
+        &__img-file{
+            .download-img{
+                width: 160px;
+                height: 160px;
+               
+            }
+           
+           
+        }
+       
+    }
+}
+
+@media screen and (max-width:767px) {
+    .object-redaction{
+        &__main{
+            margin-top: 40px;
+        }
+        &__top,&__bottom{
+
+            &-content{
+                padding: 16px;
+            }
+        }
+        &__title-top{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__form{
+            &-grid{
+                gap:16px;
+                grid-template-columns: 1fr;
+            }
+        }
+        &__employe{
+           margin-top: 32px;
+            &-row{
+                margin-top: 16px;
+                flex-direction: column;
+                align-items: unset;
+                gap: 8px;
+            }
+            &-right{
+                max-width: 171px;
+                text-align: center;
+                width: 100%;
+            }
+           
+        }
+
+        &__confirm{
+            margin-top: 32px;
+            margin-bottom: 24px;
+            // border: 1px solid red;
+            &-row{
+                gap: 16px; 
+                margin-top: 24px;
+            }
+        }
+
+        &__bottom{
+            &-title{
+                font-size: 18px;
+                line-height: 22px;
+            }
+          
+            &-row{
+                gap: 24px 0px;
+            }
+            &-result{
+                margin-bottom: 32px;
+            }
+            &-body{
+                .form__item + .form__item{
+                    margin-top: 24px;
+                }
+            }
+            &-imgs{
+             gap: 16px;
+            }
+        }
+        &__img-file{
+            .download-img{
+                width: 120px;
+                height: 120px;
+               
+            }
+           
+           
+        }
+        &__file{
+            label{
+                flex-direction: column;
+                gap: 16px 0;
+                text-align: center;
+                padding:27px 24px;
+                span{
+                    display: block;
+                }
+            }
+            
+        }
+       
+    }
+}

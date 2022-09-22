@@ -38,9 +38,6 @@
    &__tabs{
     position: relative;
    }
-   &__content{
-  
-   }
    .partenaire__repere{
     margin-top:24px;
    }
@@ -55,7 +52,39 @@
    &--active{
     display: block;
    }
+   &--2{
+    &__container{
+
+    }
+    &__content{
+        padding-left: 122px;
+        padding-right: 104px;
+    }
+   
+   }
 }
+
+.confirmed{
+    color: #44C62F;
+    &:hover{
+        color: #44C62F!important;
+    }
+}
+
+.waiting{
+    color: #F4A519;
+    &:hover{
+        color: #F4A519!important;
+    }
+}
+
+.rejected{
+    color: #F44336;
+    &:hover{
+        color: #F44336!important;
+    }
+}
+
 @media screen and (max-width:1500px){
     .gestion-object{
            .partenaire__header-top{
@@ -117,6 +146,17 @@
             margin-top: 16px;
            }
     }
+    .tab-box{
+
+        &--2{
+        
+         &__content{
+             padding-left: 32px;
+             padding-right: 32px;
+         }
+        
+        }
+    }
 }
 @media screen and (max-width:767px){
     .gestion-object{
@@ -147,6 +187,18 @@
             margin-top: 56px;
            }
     }
+    .tab-box{
+
+        &--2{
+        
+         &__content{
+             padding-left: 16px;
+             padding-right: 16px;
+         }
+        
+        }
+    }
+
 }
 
 

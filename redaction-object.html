@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Создание и редактирование объекта (сети)</title>
+</head>
+<body>
+    <div class="page ">
+        <aside class="page-sidebar">
+            <nav class="menu-left">
+                <ul class="menu-left__list">
+                    <li class="menu-left__item menu-left__item--logo">
+                        <a href="#" class="logos__long">
+                            <img src="./imgs/icon/logo.svg" alt="logo site">
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дашборд</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                                
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="menu-left__link-text">Объекты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--active">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 20.9999V18.9999C21.9993 18.1136 21.7044 17.2527 21.1614 16.5522C20.6184 15.8517 19.8581 15.3515 19 15.1299" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.12988C16.8604 3.35018 17.623 3.85058 18.1676 4.55219C18.7122 5.2538 19.0078 6.11671 19.0078 7.00488C19.0078 7.89305 18.7122 8.75596 18.1676 9.45757C17.623 10.1592 16.8604 10.6596 16 10.8799" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дочерние партнеры</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8965 14.0478L19.4701 18.3469C18.788 19.4234 17.9048 20.3624 16.8659 21.1109C15.5554 22.0552 14.0358 22.6684 12.437 22.8982C10.8381 23.128 9.20743 22.9675 7.68402 22.4305C6.16061 21.8935 4.78973 20.9959 3.68837 19.8144C2.58701 18.6328 1.78787 17.2023 1.35913 15.6449C0.930401 14.0876 0.884809 12.4496 1.22625 10.8709C1.56769 9.29207 2.28602 7.81933 3.31995 6.57831C4.1396 5.5945 5.13829 4.77946 6.25996 4.17455L9.94667 13.0287C10.1309 13.4713 10.468 13.8329 10.8965 14.0478ZM12.0437 8.53842L9.05743 1.44215C10.0655 1.13221 11.1182 0.982858 12.1769 1.00156C13.2355 1.02027 14.2824 1.20672 15.2788 1.55208L12.0437 8.53842ZM18.0548 3.59221C18.9245 4.10257 19.7139 4.74239 20.3949 5.49126C21.301 6.48767 21.9969 7.65666 22.4407 8.92826C22.8845 10.1999 23.0673 11.5479 22.978 12.8918C22.9108 13.9018 22.6911 14.8938 22.3279 15.8345L14.2979 11.7704L18.0548 3.59221Z" stroke="#90A0B7" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Отчеты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15L15.5 11.5" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.3 18C20.7 17 21 15.8 21 14.6C21 9.8 17 6 12 6C7 6 3 9.8 3 14.6C3 15.8 3.3 17 3.7 18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                            <span class="menu-left__link-text">Тарифы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Заказы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Товары</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--bottom" data-off="true">
+                        <a href="javascript:void();" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-icon">
+                                <path d="M11 17L6 12L11 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 17L13 12L18 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                                
+                            <span class="menu-left__link-text">Свернуть</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="page-body ">
+            <header class="header">
+                <div class="header__container">
+                    <nav class="header__menu menu-top">
+                        <ul class="menu-top__list">
+                            <li class="menu-top__item">
+                                <a href="#">
+                                    <div class="menu-top__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="menu-top__icon-number">
+                                            <span class="menu-top__icon-number-qt">99</span> <span  class="menu-top__icon-number-sign">+</span>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="menu-top__text">
+                                        Заказы
+                                    </div>
+                                    
+                                </a>
+                                <div class="menu-top__popUp" >
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Новые заказы</span>
+                                        <span class="compte__number">99+</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Необработанные заказы</span>
+                                        <span class="compte__number compte__number--blue">20</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Заказы в работе</span>
+                                        <span class="compte__number compte__number--green">5</span>
+                                    </a>
+                                  <div class=" menu-top__popUp-contenairLink">
+                                    <a href="#" class="menu-top__popUp-link">На страницу заказов</a>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="menu-top__item">
+                               <a href="#">
+                                <div class="menu-top__icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 10.668C24 8.54624 23.1571 6.51141 21.6569 5.01111C20.1566 3.51082 18.1217 2.66797 16 2.66797C13.8783 2.66797 11.8434 3.51082 10.3431 5.01111C8.84286 6.51141 8 8.54624 8 10.668C8 20.0013 4 22.668 4 22.668H28C28 22.668 24 20.0013 24 10.668Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3067 28C18.0723 28.4041 17.7358 28.7395 17.331 28.9727C16.9262 29.2059 16.4672 29.3286 16 29.3286C15.5329 29.3286 15.0739 29.2059 14.6691 28.9727C14.2642 28.7395 13.9278 28.4041 13.6934 28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <div class="menu-top__icon-number">
+                                        <span class="menu-top__icon-number-qt">95</span> <span  class="menu-top__icon-number-sign">+</span>
+                                    </div>
+                                        
+                                </div>
+                                <div class="menu-top__text">
+                                    Уведомления
+                                </div>
+                               </a>
+                               <div class="menu-top__popUp menu-top__popUp--notification">
+                                <a href="#" class="notification notification--new">
+                                    <div class="notification__text">Заказ №123456 оплачен</div>
+                                    <div class="notification__date">Сейчас</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                    <div class="notification__date">Вчера в 18:06</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">08.06 исекает срок действия вашего тарифа. Продлите подписку для продолжения работы.</div>
+                                    <div class="notification__date">26 июн в 19:00</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Тариф “Продвинутый владелец” активирован</div>
+                                    <div class="notification__date">03 мая в 14:56</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Заказ №45897856 оплачен</div>
+                                    <div class="notification__date">10 мар в 14:56</div>
+                                </a>
+                              <div class=" menu-top__popUp-contenairLink">
+                                <a href="#" class="menu-top__popUp-link">Показать все</a>
+                              </div>
+                               </div>
+                            </li>
+                            <li class="menu-top__item menu-top__item--mobile">
+                                <a href="#" class="menu-top__logo">
+                                    <img src="./imgs/picture/logo.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--big">
+                                    <img src="./imgs/picture/logo-court.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--small">
+                                </a>
+                            </li>
+                            <li class="menu-top__item">
+                                <a href="#" class="menu-top__user">
+                                    <div class="menu-top__user-name">
+                                        Петров Петрович
+                                    </div>
+                                    <div class="menu-top__user-img">
+                                        <img src="./imgs/picture/user.png" alt=" user profil picture">        
+                                    </div>
+                                </a>
+                                <div class="menu-top__popUp menu-top__popUp--session">
+                                   <a href="#" class="link-user-pop link-user-pop--link">Личные данные</a>
+                                   <a href="#" class="link-user-pop link-user-pop--link">Безопасность</a>
+                                   <a href="#" class="link-user-pop link-user-pop--btn">Выйти</a>
+                                 
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+           
+           <section class="object-redaсtion js-params" data-class="page-body--redObject">
+                <div class="object-redaction__container">
+                    <div class="object-redaction__content _container">
+                       <div class="object-redaction__head head">
+                            <div class="head__content">
+                                <div class="head__row">
+                                    <div class="head__left">
+                                        <a href="#" class="head__link-prev" style="display: block">
+                                            <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#109CF1"></path>
+                                            </svg>
+                                        </a>
+                                        <h1 class="object-redaction__title">Создание сети</h1>
+                                    </div>
+                                    <div class="head__right">
+                                        <a href="javascript:void()" class="btn">
+                                            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.2197 5.65574C2.16112 5.59716 2.06615 5.59716 2.00757 5.65574L0.893934 6.76938C0.865804 6.79751 0.85 6.83566 0.85 6.87544C0.85 6.91523 0.865804 6.95338 0.893934 6.98151L5.34848 11.4361C5.40706 11.4946 5.50203 11.4946 5.56061 11.4361L15.1061 1.8906C15.1646 1.83202 15.1646 1.73705 15.1061 1.67847L13.9924 0.564832C13.9643 0.536702 13.9261 0.520898 13.8864 0.520898C13.8466 0.520898 13.8084 0.536702 13.7803 0.564832L5.45455 8.89058L2.2197 5.65574Z" fill="white" stroke="white" stroke-width="0.3" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Создать</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="object-redaction__main" >
+                            <div class="object-redaction__top">
+                                <div class="object-redaction__top-content">
+                                    <h2 class="object-redaction__title-block object-redaction__title-top">Юридическая информация</h2>
+                                    <form class="object-redaction__form form" autocomplete="off">
+                                        <div class="object-redaction__form-grid">
+                                            <div class="form__item">
+                                                <div class="form__input">
+                                                    <input type="text" placeholder="ИП “Ромашка”" id="ip" value="ИП “Ромашка”">
+                                                    <div class="form__icon form__icon--edit">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>      
+                                                    </div>
+                                                </div>
+                                                <label for="ip" class="form__label show-label">Наименование юр. лица</label>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="form__input">
+                                                    <input type="text" placeholder="ИНН" id="inn" value="1253841002">
+                                                    <div class="form__icon form__icon--edit">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>      
+                                                    </div>
+                                                </div>
+                                                <label for="inn" class="form__label show-label">ИНН</label>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="form__input">
+                                                    <input type="text" placeholder="КПП" id="kpp" value="1253841002">
+                                                    <div class="form__icon form__icon--edit">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>      
+                                                    </div>
+                                                </div>
+                                                <label for="kpp" class="form__label show-label">КПП</label>
+                                            </div>
+                                            <div class="form__item">
+                                                <div class="form__input">
+                                                    <input type="text" placeholder="ОГРН" id="ogph" value="1026800149301">
+                                                    <div class="form__icon form__icon--edit">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>      
+                                                    </div>
+                                                </div>
+                                                <label for="ogph" class="form__label show-label">ОГРН</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                     <div class="object-redaction__employe">
+                                        <div class="object-redaction__employe-title">Администратор сети:</div>
+                                        <div class="object-redaction__employe-row">
+                                          <div class="object-redaction__employe-left">
+                                            <div class="object-redaction__employe-img">
+                                                <img src="./imgs/picture/avatar.png" alt="employe">
+                                            </div>
+                                            <div class="object-redaction__employe-name">Новослабодская Регина Олеговна</div>
+                                          </div>
+                                          <div class="object-redaction__employe-right">
+                                            <a href="javascript:void()" class="object-redaction__employe-btn">Изменить</a>
+                                          </div>
+                                        </div>
+                                     </div>
+                                     <div class="object-redaction__confirm">
+                                        <div class="object-redaction__confirm-text">Для подтверждения сети необходимо загрузить следующие документы в формате PDF: </div>
+                                        <ul class="ul object-redaction__confirm-list">
+                                            <li class="object-redaction__confirm-listItem">ИНН</li>
+                                            <li class="object-redaction__confirm-listItem">Свидетельство</li>
+                                            <li class="object-redaction__confirm-listItem">Документ о постановке на учет в налоговом органе</li>
+                                        </ul>
+                                       <div class="scroll">
+                                        <div class="object-redaction__confirm-row">
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            <a href="javascript:void()" class="object-redaction__confirm-item card-1">
+                                                <div class=" card-1__content">
+                                                    <div class="card-1__img">
+                                                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                            
+                                                    </div>
+                                                    <div class="card-1__text">ИНН.pdf</div>
+                                                </div>
+                                                <div class="card-1__close-button">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_508_6254)">
+                                                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </g>
+                                                        <defs>
+                                                        <clipPath id="clip0_508_6254">
+                                                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                        </clipPath>
+                                                        </defs>
+                                                        </svg>
+                                                </div>
+                                            </a>
+                                            
+                                            
+                                        </div>
+                                       </div>
+                                     </div>
+                                     <form action="#" class="object-redaction__confirm-form" enctype='multipart/form-data'>
+                                        <div class="form__item">
+                                            <div class="object-redaction__file form__file">
+                                                <input type="file" name="filefield" multiple="multiple" id="document">
+                                                <label for="document">
+                                                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <div class="form__file-title">Загрузить документы</div>  
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                     </form>
+                                </div>
+                            </div>
+                            <div class="object-redaction__bottom">
+                                <div class="object-redaction__bottom-content">
+                                    <h2 class="object-redaction__title-block object-redaction__bottom-title">Информация о сети</h2>
+                                    <form action="#" class="form object-redaction__bottom-form">
+                                        <div class="object-redaction__bottom-row">
+                                            <div class="object-redaction__img-file">
+                                                <div class="download-img">
+                                                    <input type="file" id="download-image">
+                                                    <label for="download-image">
+                                                        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                            <circle cx="100" cy="100" r="100" fill="url(#pattern0)"/>
+                                                            <defs>
+                                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                            <use xlink:href="#image0_997_20343" transform="scale(0.005)"/>
+                                                            </pattern>
+                                                            <image id="image0_997_20343" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+                                                            </defs>
+                                                        </svg>      
+                                                    </label>
+                                                    <div class="download-img__write-icon">
+                                                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_d_628_23235)">
+                                                            <circle cx="27.2312" cy="23.2312" r="23.0769" fill="white"></circle>
+                                                            </g>
+                                                            <path d="M15.6914 29.9619V34.7696H20.4991L34.6786 20.5901L29.8709 15.7824L15.6914 29.9619ZM38.3965 16.8721C38.8965 16.3721 38.8965 15.5645 38.3965 15.0645L35.3965 12.0645C34.8965 11.5645 34.0888 11.5645 33.5888 12.0645L31.2427 14.4106L36.0504 19.2183L38.3965 16.8721Z" fill="#334D6E"></path>
+                                                            <defs>
+                                                            <filter id="filter0_d_628_23235" x="0.154297" y="0.154297" width="54.1543" height="54.1538" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                            <feOffset dy="4"></feOffset>
+                                                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                                            <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.235294 0 0 0 0 0.278431 0 0 0 0.08 0"></feColorMatrix>
+                                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_628_23235"></feBlend>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_628_23235" result="shape"></feBlend>
+                                                            </filter>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="object-redaction__bottom-body">
+                                                <div class="object-redaction__bottom-result">
+                                                    <div class="form__item">
+                                                        <div class="object-redaction__file form__file">
+                                                            <input type="file" multiple id="document2">
+                                                            <label for="document2">
+                                                                <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M2.5 40.4545V46C2.5 48.2091 4.29086 50 6.5 50H52.5C54.7091 50 56.5 48.2091 56.5 46V39.5M2.5 40.4545V12C2.5 9.79086 4.29086 8 6.5 8H52.5C54.7091 8 56.5 9.79086 56.5 12V39.5M2.5 40.4545L18.6544 20.4054C19.4478 19.4208 20.9444 19.4103 21.7514 20.3838L36.0172 37.5909L43.0793 30.3505C43.8189 29.5922 45.0215 29.5421 45.8216 30.2363L56.5 39.5M48.1207 20.4091C48.1207 23.045 46.0365 25.1818 43.4655 25.1818C40.8945 25.1818 38.8103 23.045 38.8103 20.4091C38.8103 17.7732 40.8945 15.6364 43.4655 15.6364C46.0365 15.6364 48.1207 17.7732 48.1207 20.4091Z" stroke="#C2CFE0" stroke-width="3"/>
+                                                                </svg>
+                                                                    
+                                                               <div >
+                                                                    <div class="form__file-title">Загрузить обложку</div>  
+                                                                    <div class="form__file-size">Размер изображения —<span> от 1500х837 px</span></div>  
+                                                               </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="forn__item" style="display: none">
+                                                        <div class=" object-redaction__file-img">
+                                                            <input type="file" multiple id="form-file-img">
+                                                            <label for="form-file-img" class="object-redaction__showImg">
+                                                                <div class="object-redaction__showImg-img">
+                                                                    <img src="./imgs/picture/Component 3.png" alt="file ">
+                                                                </div>
+                                                                <div class="object-redaction__showImg-row">
+                                                                    <div class="object-redaction__showImg-icon">
+                                                                        <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M2.5 40.4545V46C2.5 48.2091 4.29086 50 6.5 50H52.5C54.7091 50 56.5 48.2091 56.5 46V39.5M2.5 40.4545V12C2.5 9.79086 4.29086 8 6.5 8H52.5C54.7091 8 56.5 9.79086 56.5 12V39.5M2.5 40.4545L18.6544 20.4054C19.4478 19.4208 20.9444 19.4103 21.7514 20.3838L36.0172 37.5909L43.0793 30.3505C43.8189 29.5922 45.0215 29.5421 45.8216 30.2363L56.5 39.5M48.1207 20.4091C48.1207 23.045 46.0365 25.1818 43.4655 25.1818C40.8945 25.1818 38.8103 23.045 38.8103 20.4091C38.8103 17.7732 40.8945 15.6364 43.4655 15.6364C46.0365 15.6364 48.1207 17.7732 48.1207 20.4091Z" stroke="white" stroke-width="3"/>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="object-redaction__showImg-text">Изменить обложку</div>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="object-redaction__bottom-formItemSmall form__item ">
+                                                    <div class="form__input">
+                                                        <input type="text" placeholder="" id="namceti" value="Пиво и рыба">
+                                                        <div class="form__icon form__icon--edit">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M18.5 2.5C18.8978 2.10217 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10217 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10217 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>      
+                                                        </div>
+                                                    </div>
+                                                    <label for="namceti" class="form__label show-label">Название сети</label>
+                                                </div>
+                                                <div class="form__item">
+                                                    <div class="form__textarea">
+                                                        <textarea  id="description">Компания успешных, позитивных и целеустремленных людей. ПивоМан всегда добивается поставленных целей в работе и жизни. Мы стремимся к совершенству и довольствуемся самым лучшим. Сеть фирменных магазинов ПивоМан поможет Вам сделать правильный выбор и купить подходящий Вашему вкусу алкогольный напиток. Мы поможем Вам стать надежным гидом в удивительном мире высококачественных сортов пива.На сегодняшний день существует около 20000 сортов пива – такое разнообразие делает этот напиток еще более популярным среди многих любителей спиртных и безалкогольных напитков. Удивительный вкус пива нельзя ни с чем сравнить, однако вкус его подвидов, поражающий своим многообразием, позволяет выбирать понравившийся сорт напитка. С началом бурного развития пивоварения в Европе в средние века, продажа этого напитка становится прибыльным и почетным делом,
+                                                        </textarea>
+                                                        
+                                                    </div>
+                                                    <label for="description" class="form__label show-label">Описание сети</label>
+                                                </div>
+                                              <div class="scroll form__item object-redaction__bottom-scroll--food">
+                                                <div class="form__item object-redaction__bottom-imgs">
+                                                    <a href="javascript:void()" class="card-0">
+                                                        <div class="card-0__img">
+                                                            <img src="./imgs/picture/Component 4.png" alt="product">
+                                                        </div>
+                                                        <div class="card-0__content">
+                                                            <div class="card-0__text">Изменить изображение</div>
+                                                        </div>
+                                                        <div class="card-0__close-button">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_508_6254)">
+                                                                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_508_6254">
+                                                                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void()" class="card-0">
+                                                        <div class="card-0__img">
+                                                            <img src="./imgs/picture/Component 7.png" alt="product">
+                                                        </div>
+                                                        <div class="card-0__content">
+                                                            <div class="card-0__text">Изменить изображение</div>
+                                                        </div>
+                                                        <div class="card-0__close-button">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_508_6254)">
+                                                                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_508_6254">
+                                                                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void()" class="card-0">
+                                                        <div class="card-0__img">
+                                                            <img src="./imgs/picture/Component 4.png" alt="product">
+                                                        </div>
+                                                        <div class="card-0__content">
+                                                            <div class="card-0__text">Изменить изображение</div>
+                                                        </div>
+                                                        <div class="card-0__close-button">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_508_6254)">
+                                                                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_508_6254">
+                                                                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void()" class="card-0">
+                                                        <div class="card-0__img">
+                                                            <img src="./imgs/picture/Component 4.png" alt="product">
+                                                        </div>
+                                                        <div class="card-0__content">
+                                                            <div class="card-0__text">Изменить изображение</div>
+                                                        </div>
+                                                        <div class="card-0__close-button">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_508_6254)">
+                                                                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_508_6254">
+                                                                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void()" class="card-0">
+                                                        <div class="card-0__img">
+                                                            <img src="./imgs/picture/Component 7.png" alt="product">
+                                                        </div>
+                                                        <div class="card-0__content">
+                                                            <div class="card-0__text">Изменить изображение</div>
+                                                        </div>
+                                                        <div class="card-0__close-button">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_508_6254)">
+                                                                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_508_6254">
+                                                                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void()" class="card-0">
+                                                        <div class="card-0__img">
+                                                            <img src="./imgs/picture/Component 4.png" alt="product">
+                                                        </div>
+                                                        <div class="card-0__content">
+                                                            <div class="card-0__text">Изменить изображение</div>
+                                                        </div>
+                                                        <div class="card-0__close-button">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_508_6254)">
+                                                                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_508_6254">
+                                                                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                    </a>
+                                                    <div class="input-add" >
+                                                        <div class="input-add__content">
+                                                            <input type="file" multiple id="add-product">
+                                                            <label for="add-product">
+                                                                <svg width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3617 2.66211C33.7013 2.66211 35.5979 4.55868 35.5979 6.89823V27.6237H56.3233C58.6628 27.6237 60.5594 29.5202 60.5594 31.8598C60.5594 34.1993 58.6628 36.0959 56.3233 36.0959H35.5979V56.8213C35.5979 59.1609 33.7013 61.0575 31.3617 61.0575C29.0222 61.0575 27.1256 59.1609 27.1256 56.8213V36.0959H6.40018C4.06064 36.0959 2.16406 34.1993 2.16406 31.8598C2.16406 29.5202 4.06064 27.6237 6.40018 27.6237H27.1256V6.89823C27.1256 4.55868 29.0222 2.66211 31.3617 2.66211Z" fill="#C2CFE0"/>
+                                                                </svg>
+                                                                    
+                                                                <span class="input-add__text"> Добавить фото</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+           </section>
+
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__top">
+                        <a href="#">
+                            <img src="./imgs/icon/logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        
+                    </div>
+                    <div class="footer__text">
+                        Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации просьба обращаться к нашим менеджерам!
+                         Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+                    </div>
+                </div>
+            </footer>
+            <!-- menu fixed for mobile -->
+            <nav class="menu-mobile menu-mobile--btn">
+             
+                <a href="javascript:void()" class="btn menu-mobile--btn__btn">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.2197 5.65574C2.16112 5.59716 2.06615 5.59716 2.00757 5.65574L0.893934 6.76938C0.865804 6.79751 0.85 6.83566 0.85 6.87544C0.85 6.91523 0.865804 6.95338 0.893934 6.98151L5.34848 11.4361C5.40706 11.4946 5.50203 11.4946 5.56061 11.4361L15.1061 1.8906C15.1646 1.83202 15.1646 1.73705 15.1061 1.67847L13.9924 0.564832C13.9643 0.536702 13.9261 0.520898 13.8864 0.520898C13.8466 0.520898 13.8084 0.536702 13.7803 0.564832L5.45455 8.89058L2.2197 5.65574Z" fill="white" stroke="white" stroke-width="0.3" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Создать</span>
+                </a>
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 8H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 16H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 24H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                  
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                      
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                 
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                             
+                        </a>     
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./scripts/dashbord.js"></script>
+    <script src="./scripts/form.js"></script>
+</body>
+</html>
