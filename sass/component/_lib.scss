@@ -56,8 +56,7 @@
         }
     }
     &__file{
-        height:122px;
-      
+
         &:hover{
             label{
                 background: #F6F8FB;
@@ -73,6 +72,7 @@
             display: none;
         }
         label{
+            padding: 32px 0;
             &,*{
                 transition: all 300ms ease;
             }
@@ -376,6 +376,10 @@
         width: 47px;
         height: 47px;
         transition: all 300ms ease;
+        &--left{
+            right: 8px;
+            bottom: 8px;
+        }
         svg{
             display: inline-block;
             width: 100%;
@@ -393,11 +397,12 @@
         overflow: hidden;
         height: 100%;
         height: 100%;
+     
        
-        svg{
+        svg,img{
             display: inline-block;
             width: 100%;
-            height: 100%;
+           height: 100%;
         }
         
     }
@@ -1936,6 +1941,19 @@
     border-radius: 30px;
     padding: 32px 0;
     overflow: hidden;
+    &--noImg{
+        .list-point{
+            &__row{
+                // border: 1px solid red;
+                padding-top: 0;
+            }
+            &__header{
+                min-height: unset;
+                padding-top: 0;
+            }
+        }
+    }
+   
     &__item-big{
         // border: 1px solid;
         padding: 8px 0;
@@ -2145,6 +2163,7 @@
             margin-bottom: 0;
         }
     }
+   
 }
 
 .button-more{
@@ -2176,6 +2195,37 @@
         }
     }
     
+}
+
+.link-show-more{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #109CF1;
+    transition: all 300ms ease;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #58C0FF;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all 300ms ease-in;
+    }
+    &:hover{
+        color: #58C0FF;
+        &::before{
+            content: '';
+           width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width:1500px) {
@@ -2519,6 +2569,15 @@
        
       
     }
+
+    .download-img{
+        &__write-icon{
+            // border: 1px solid;
+            width: 36px;
+            height: 36px;
+           
+        }
+    }
     
 }
 @media screen and (max-width:767px) {
@@ -2778,6 +2837,9 @@
             &--body{
                 position: relative;
                 padding: 12px 16px;
+                &::before{
+                    width: calc(100% - 32px);
+                }
                
             }
         }
@@ -2790,10 +2852,7 @@
                 height: 40px;
                
             }
-            &-left{
-                max-width:214px;
-            
-            }
+           
             &-icon{
                 width: 32px;
                 height: 32px;
@@ -2827,6 +2886,17 @@
         
        
       
+    }
+    .download-img{
+        &__write-icon{
+            // border: 1px solid;
+            width: 28px;
+            height: 28px;
+            &--left{
+                bottom: 6px;
+                right: 6px;
+            }
+        }
     }
 
  
