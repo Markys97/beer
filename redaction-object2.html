@@ -266,7 +266,7 @@
                                         <h1 class="object-redaction__title">Сеть “Пиво и рыба”</h1>
                                     </div>
                                     <div class="head__right">
-                                        <a href="javascript:void()" class="btn btn-save btn-js">
+                                        <a href="javascript:void()" class="btn  btn-js">
                                             <span>Сохранить изменения</span>
                                         </a>
                                     </div>
@@ -332,12 +332,12 @@
                                      <div class="object-redaction__employe">
                                         <div class="object-redaction__employe-title">Администратор сети:</div>
                                         <div class="object-redaction__employe-row">
-                                          <div class="object-redaction__employe-left">
+                                          <a href="javascript:void()" class="object-redaction__employe-left">
                                             <div class="object-redaction__employe-img">
                                                 <img src="./imgs/picture/avatar.png" alt="employe">
                                             </div>
                                             <div class="object-redaction__employe-name">Новослабодская Регина Олеговна</div>
-                                          </div>
+                                          </a>
                                           <div class="object-redaction__employe-right">
                                             <a href="javascript:void()" class="object-redaction__employe-btn">Изменить</a>
                                           </div>
@@ -350,9 +350,38 @@
                                             <li class="object-redaction__confirm-listItem">Свидетельство</li>
                                             <li class="object-redaction__confirm-listItem">Документ о постановке на учет в налоговом органе</li>
                                         </ul>
-                                       <div class="scroll">
-                                        
-                                       </div>
+                                        <div class="scroll">
+                                            <div class="object-redaction__confirm-row d-none">
+                                                <a href="javascript:void()" class="object-redaction__confirm-item card-1" data-fileId=${index} style="display: none">
+                                                    <div class=" card-1__content">
+                                                        <div class="card-1__img">
+                                                            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M35.043 4.83398H14.5013C13.2194 4.83398 11.99 5.34321 11.0836 6.24963C10.1772 7.15606 9.66797 8.38544 9.66797 9.66732V48.334C9.66797 49.6159 10.1772 50.8452 11.0836 51.7517C11.99 52.6581 13.2194 53.1673 14.5013 53.1673H43.5013C44.7832 53.1673 46.0126 52.6581 46.919 51.7517C47.8254 50.8452 48.3346 49.6159 48.3346 48.334V18.1257L35.043 4.83398Z" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M33.832 4.83398V19.334H48.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M38.6654 31.416H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M38.6654 41.084H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M24.1654 21.75H19.332" stroke="#109CF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                                
+                                                        </div>
+                                                        <div class="card-1__text">${file.name}</div>
+                                                    </div>
+                                                    <div class="card-1__close-button">
+                                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_508_6254)">
+                                                            <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </g>
+                                                            <defs>
+                                                            <clipPath id="clip0_508_6254">
+                                                            <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                                                            </clipPath>
+                                                            </defs>
+                                                            </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                           </div>
                                      </div>
                                      <form action="#" class="object-redaction__confirm-form" enctype='multipart/form-data'>
                                         <div class="form__item">
@@ -381,7 +410,7 @@
                                         <div class="object-redaction__bottom-row">
                                             <div class="object-redaction__img-file">
                                                 <div class="download-img">
-                                                    <input type="file" id="download-image">
+                                                    <input type="file" id="download-image" class="img-file-ceti">
                                                     <label for="download-image">
                                                        <img src="./imgs/picture/net-test.png" alt="product">
                                                     </label>
@@ -404,11 +433,12 @@
                                                             </defs>
                                                         </svg>
                                                     </div>
+                                                   
                                                 </div>
                                             </div>
                                             <div class="object-redaction__bottom-body">
                                                 <div class="object-redaction__bottom-result">
-                                                    <div class="form__item">
+                                                    <!-- <div class="form__item" style="display: none">
                                                         <div class="object-redaction__file form__file">
                                                             <input type="file" multiple id="document2">
                                                             <label for="document2">
@@ -422,8 +452,8 @@
                                                                </div>
                                                             </label>
                                                         </div>
-                                                    </div>
-                                                    <div class="forn__item" style="display: none">
+                                                    </div> -->
+                                                    <div class="forn__item" >
                                                         <div class=" object-redaction__file-img">
                                                             <input type="file" multiple id="form-file-img">
                                                             <label for="form-file-img" class="object-redaction__showImg">
@@ -462,7 +492,7 @@
                                                     </div>
                                                     <label for="description" class="form__label show-label">Описание сети</label>
                                                 </div>
-                                                <div class="form__item">
+                                                <div class="form__item--btz form__item">
                                                     <div class="object-redaction__file form__file">
                                                         <input type="file" multiple id="document3">
                                                         <label for="document3">
@@ -477,8 +507,10 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                             
-                                                
+                                                <div class="scroll form__item object-redaction__bottom-scroll--food object-redaction__bottom-scroll--2 ">
+                                                    <div class="form__item object-redaction__bottom-imgs"> </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </form>
@@ -487,1056 +519,433 @@
                             <div class="object-redaction__block3">
                                 <div class="object-redaction__block3-content">
                                     <h2 class="object-redaction__title-block object-redaction__block3-title">Список точек</h2>
-                                    <div class="object-redaction__list-point list-point list-point--noImg">
-                                        <div class="list-point__item-big ">
+                                    <div class="list-point list-point--noImg">
+                                        <div class="list-point__item">
                                             <div class="list-point__header">
                                                 <div class="list-point__header-left">
-                                                    <div class="list-point__header-title">Москва</div>
+                                                    
+                                                    <div class="list-point__header-text">Нижний Новгород</div>
                                                 </div>
-                                                <div class="list-point__header-icon ">
-                                                    <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#334D6E"></path>
-                                                    </svg>
+                                                <div class="list-point__header-right">
+                                                    <div class="list-point__header-icon ">
+                                                        <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#334D6E"></path>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="list-point__body">
-                                                <div class="list-point__row list-point__row--titles">
+                                                <div class="list-point__wrapper list-point__wrapper--title">
+                                                    <div class="list-point__left">
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Адрес</span>
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Франчайзи</span>
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                           
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Статус</span>
+                                                            <div class="list-point__col-title">Статус</div>
+                                                          
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Администраторы точек</span>
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        
                                                     </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Операторы точек</span>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text confirmed">Подтвержден</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
                                                     </div>
                                                 </div>
-                                                <div class="list-point__row list-point__row--body">
+                                                <div class="list-point__wrapper">
+                                                    <div class="list-point__left">
                                                     <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <a href="javascript:void()" class="list-point__text list-point__text--color">​г. Н. Новгород, ул. Надежды Сусловой, 10</a>
+                                                                </li>
+                                                            </ul>
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                            <a href="#" class="list-point__col-row">
+                                                                <div class="list-point__col-img">
+                                                                    <img src="./imgs/picture/avatar.png" alt="person">
+                                                                </div>
+                                                                <div class="list-point__col-name">Новослабодская Р. О.</div>
+                                                            </a>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Статус</div>
+                                                            <div class="list-point__col-status rejected">Отклонён</div>
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            <div class="list-point__col-wrapper">
+                                                                <ul class="list-point__col-list">
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                    </li>
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        <div class="list-point__col-wrapper">
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                </li>
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                         </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
                                                     </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text waiting">Ожидает</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
                                                     </div>
                                                 </div>
-                                                <div class="list-point__row list-point__row--body">
+                                                <div class="list-point__wrapper">
+                                                    <div class="list-point__left">
                                                     <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <a href="javascript:void()" class="list-point__text list-point__text--color">​г. Н. Новгород, ул. Надежды Сусловой, 10</a>
+                                                                </li>
+                                                            </ul>
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                            <a href="#" class="list-point__col-row">
+                                                                <div class="list-point__col-img">
+                                                                    <img src="./imgs/picture/avatar.png" alt="person">
+                                                                </div>
+                                                                <div class="list-point__col-name">Новослабодская Р. О.</div>
+                                                            </a>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Статус</div>
+                                                            <div class="list-point__col-status waiting">Ожидает</div>
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            <div class="list-point__col-wrapper">
+                                                                <ul class="list-point__col-list">
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                    </li>
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        <div class="list-point__col-wrapper">
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                </li>
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                         </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-point__wrapper">
+                                                    <div class="list-point__left">
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <a href="javascript:void()" class="list-point__text list-point__text--color">​г. Н. Новгород, ул. Надежды Сусловой, 10</a>
+                                                                </li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                            <a href="#" class="list-point__col-row">
+                                                                <div class="list-point__col-img">
+                                                                    <img src="./imgs/picture/avatar.png" alt="person">
+                                                                </div>
+                                                                <div class="list-point__col-name">Новослабодская Р. О.</div>
+                                                            </a>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Статус</div>
+                                                            <div class="list-point__col-status confirmed">Подтвержден</div>
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            <div class="list-point__col-wrapper">
+                                                                <ul class="list-point__col-list">
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                    </li>
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                             </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        <div class="list-point__col-wrapper">
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                </li>
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                         </div>
-                                                       </a>
                                                     </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text rejected">Отклонён</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="list-point__item-big ">
+                                        <div class="list-point__item">
                                             <div class="list-point__header">
                                                 <div class="list-point__header-left">
-                                                    <div class="list-point__header-title">Нижний Новгород</div>
+                                                    
+                                                    <div class="list-point__header-text">Москва</div>
                                                 </div>
-                                                <div class="list-point__header-icon ">
-                                                    <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#334D6E"></path>
-                                                    </svg>
+                                                <div class="list-point__header-right">
+                                                    <div class="list-point__header-icon ">
+                                                        <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#334D6E"></path>
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="list-point__body">
-                                                <div class="list-point__row list-point__row--titles">
+                                                <div class="list-point__wrapper list-point__wrapper--title">
+                                                    <div class="list-point__left">
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Адрес</span>
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Франчайзи</span>
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                           
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Статус</span>
+                                                            <div class="list-point__col-title">Статус</div>
+                                                          
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <span class="list-point__title">Администраторы точек</span>
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        
                                                     </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Операторы точек</span>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text confirmed">Подтвержден</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
                                                     </div>
                                                 </div>
-                                                <div class="list-point__row list-point__row--body">
+                                                <div class="list-point__wrapper">
+                                                    <div class="list-point__left">
                                                     <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <a href="javascript:void()" class="list-point__text list-point__text--color">​г. Н. Новгород, ул. Надежды Сусловой, 10</a>
+                                                                </li>
+                                                            </ul>
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                            <a href="#" class="list-point__col-row">
+                                                                <div class="list-point__col-img">
+                                                                    <img src="./imgs/picture/avatar.png" alt="person">
+                                                                </div>
+                                                                <div class="list-point__col-name">Новослабодская Р. О.</div>
+                                                            </a>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Статус</div>
+                                                            <div class="list-point__col-status rejected">Отклонён</div>
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            <div class="list-point__col-wrapper">
+                                                                <ul class="list-point__col-list">
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                    </li>
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        <div class="list-point__col-wrapper">
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                </li>
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                         </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
                                                     </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text waiting">Ожидает</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
                                                     </div>
                                                 </div>
-                                                <div class="list-point__row list-point__row--body">
+                                                <div class="list-point__wrapper">
+                                                    <div class="list-point__left">
                                                     <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <a href="javascript:void()" class="list-point__text list-point__text--color">​г. Н. Новгород, ул. Надежды Сусловой, 10</a>
+                                                                </li>
+                                                            </ul>
                                                     </div>
                                                     <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                            <a href="#" class="list-point__col-row">
+                                                                <div class="list-point__col-img">
+                                                                    <img src="./imgs/picture/avatar.png" alt="person">
+                                                                </div>
+                                                                <div class="list-point__col-name">Новослабодская Р. О.</div>
+                                                            </a>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Статус</div>
+                                                            <div class="list-point__col-status waiting">Ожидает</div>
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            <div class="list-point__col-wrapper">
+                                                                <ul class="list-point__col-list">
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                    </li>
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
+                                                            </div>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        <div class="list-point__col-wrapper">
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                </li>
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                         </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <div class="list-point__wrapper">
+                                                    <div class="list-point__left">
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Адрес</div>
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <a href="javascript:void()" class="list-point__text list-point__text--color">​г. Н. Новгород, ул. Надежды Сусловой, 10</a>
+                                                                </li>
+                                                            </ul>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Франчайзи</div>
+                                                            <a href="#" class="list-point__col-row">
+                                                                <div class="list-point__col-img">
+                                                                    <img src="./imgs/picture/avatar.png" alt="person">
+                                                                </div>
+                                                                <div class="list-point__col-name">Новослабодская Р. О.</div>
+                                                            </a>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                            <div class="list-point__col-title">Статус</div>
+                                                            <div class="list-point__col-status confirmed">Подтвержден</div>
+                                                    </div>
+                                            
+                                                    </div>
+                                                    <div class="list-point__right">
+                                                        <div class="list-point__col">
+                                                            <div class="list-point__col-title">Администраторы точек</div>
+                                                            <div class="list-point__col-wrapper">
+                                                                <ul class="list-point__col-list">
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                    </li>
+                                                                    <li class="list-point__col-content">
+                                                                        <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                             </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
+                                                    </div>
+                                                    <div class="list-point__col">
+                                                        <div class="list-point__col-title">Операторы точек</div>
+                                                        <div class="list-point__col-wrapper">
+                                                            <ul class="list-point__col-list">
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Новослабодкая Р. О.</span>
+                                                                </li>
+                                                                <li class="list-point__col-content">
+                                                                    <span class="list-point__text list-point__text--ligne">Николаенко И. Н.</span>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void()" class="list-point__col-button list-point__text--ligne list-point__text--ligne-blue">ещё 4</a>
                                                         </div>
-                                                       </a>
                                                     </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text rejected">Отклонён</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="list-point__item-big ">
-                                            <div class="list-point__header">
-                                                <div class="list-point__header-left">
-                                                    <div class="list-point__header-title">Москва</div>
-                                                </div>
-                                                <div class="list-point__header-icon ">
-                                                    <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#334D6E"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div class="list-point__body">
-                                                <div class="list-point__row list-point__row--titles">
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Адрес</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Франчайзи</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Статус</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Администраторы точек</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Операторы точек</span>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text confirmed">Подтвержден</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text waiting">Ожидает</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text rejected">Отклонён</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="list-point__item-big ">
-                                            <div class="list-point__header">
-                                                <div class="list-point__header-left">
-                                                    <div class="list-point__header-title">Нижний Новгород</div>
-                                                </div>
-                                                <div class="list-point__header-icon ">
-                                                    <svg class="h1__icon h1__icon--left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#334D6E"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div class="list-point__body">
-                                                <div class="list-point__row list-point__row--titles">
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Адрес</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Франчайзи</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Статус</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Администраторы точек</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <span class="list-point__title">Операторы точек</span>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text confirmed">Подтвержден</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text waiting">Ожидает</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="list-point__row list-point__row--body">
-                                                    <div class="list-point__col">
-                                                       <div class="list-point__col-desktop">
-                                                           <a href="#"> <span class="list-point__text list-point__text--address">​ул. Надежды Сусловой, 10</span></a>
-                                                       </div>
-                                                       <div class="list-point__col-mobile">
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Адрес</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">​ул. Надежды Сусловой, 10</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Администраторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                   <a href="#"> <span class="list-point__text">Новослабодкая Р. О.</span></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="list-point__item">
-                                                                <div class="list-point__item-title">
-                                                                    <span class="list-point__title">Операторы точек</span>
-                                                                </div>
-                                                                <div class="list-point__item-text">
-                                                                    <span class="list-point__text">Николаенко И. Н.</span>
-                                                                </div>
-                                                            </div>
-                                                       </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Франчайзи</span>
-                                                        </div>
-                                                       <a href="#" class="list-point__col-body">
-                                         
-                                                            <div class="list-point__col-img">
-                                                                <img src="./imgs/picture/avatar.png" alt="person">
-                                                            </div>
-                                           
-                                                        <div class="list-point__col-name">
-                                                            <span class="list-point__text list-point__text--ligne">Новослабодская Р. О.</span>
-                                                        </div>
-                                                       </a>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <div class="list-point__item-title">
-                                                            <span class="list-point__title">Статус</span>
-                                                        </div>
-                                                        <span class="list-point__text rejected">Отклонён</span>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                      <ul class="list-point__col-list">
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                        <li class="list-point__col-listItem">
-                                                            <a href="#"> <span class="list-point__text ">Новослабодкая Р. О.</span></a>
-                                                        </li>
-                                                      </ul>
-                                                      <div class=" list-point__wrapper-button">
-                                                        <a href="" class="button-more">ещё 4</a>
-                                                      </div>
-                                                    </div>
-                                                    <div class="list-point__col">
-                                                        <ul class="list-point__col-list">
-                                                            <li class="list-point__col-listItem">
-                                                               <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                            <li class="list-point__col-listItem">
-                                                                <span class="list-point__text ">Новослабодкая Р. О.</span>
-                                                            </li>
-                                                          </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   </div>  
+                                    
                                 </div>
                             </div>
                             <div class="object-redaction__block4">
@@ -1885,7 +1294,7 @@
                                     <a href="#" class="link-show-more">Смотреть все</a>
                                 </div>
                                 <div class="object-redaction__end-wrapper-btn">
-                                    <a href="#" class="btn btn--outline">Скрыть сеть</a>
+                                    <a href="javascript:void()" class="btn btn--outline">Скрыть сеть</a>
                                 </div>
                             </div>
                        </div>
@@ -1911,8 +1320,8 @@
             <!-- menu fixed for mobile -->
             <nav class="menu-mobile menu-mobile--btn">
 
-                <a href="javascript:void()" class="btn menu-mobile--btn__btn btn-save">
-                    <span>Создать</span>
+                <a href="javascript:void()" class="btn menu-mobile--btn__btn ">
+                    <span>Сохранить изменения</span>
                 </a>
                 <ul class="menu-mobile__list">
                     <li class="menu-mobile__item">

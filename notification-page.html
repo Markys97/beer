@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Уведомления</title>
+</head>
+<body>
+    <div class="page ">
+        <aside class="page-sidebar">
+            <nav class="menu-left">
+                <ul class="menu-left__list">
+                    <li class="menu-left__item menu-left__item--logo">
+                        <a href="#" class="logos__long">
+                            <img src="./imgs/icon/logo.svg" alt="logo site">
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дашборд</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                                
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="menu-left__link-text">Объекты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--active">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 20.9999V18.9999C21.9993 18.1136 21.7044 17.2527 21.1614 16.5522C20.6184 15.8517 19.8581 15.3515 19 15.1299" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.12988C16.8604 3.35018 17.623 3.85058 18.1676 4.55219C18.7122 5.2538 19.0078 6.11671 19.0078 7.00488C19.0078 7.89305 18.7122 8.75596 18.1676 9.45757C17.623 10.1592 16.8604 10.6596 16 10.8799" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Дочерние партнеры</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.8965 14.0478L19.4701 18.3469C18.788 19.4234 17.9048 20.3624 16.8659 21.1109C15.5554 22.0552 14.0358 22.6684 12.437 22.8982C10.8381 23.128 9.20743 22.9675 7.68402 22.4305C6.16061 21.8935 4.78973 20.9959 3.68837 19.8144C2.58701 18.6328 1.78787 17.2023 1.35913 15.6449C0.930401 14.0876 0.884809 12.4496 1.22625 10.8709C1.56769 9.29207 2.28602 7.81933 3.31995 6.57831C4.1396 5.5945 5.13829 4.77946 6.25996 4.17455L9.94667 13.0287C10.1309 13.4713 10.468 13.8329 10.8965 14.0478ZM12.0437 8.53842L9.05743 1.44215C10.0655 1.13221 11.1182 0.982858 12.1769 1.00156C13.2355 1.02027 14.2824 1.20672 15.2788 1.55208L12.0437 8.53842ZM18.0548 3.59221C18.9245 4.10257 19.7139 4.74239 20.3949 5.49126C21.301 6.48767 21.9969 7.65666 22.4407 8.92826C22.8845 10.1999 23.0673 11.5479 22.978 12.8918C22.9108 13.9018 22.6911 14.8938 22.3279 15.8345L14.2979 11.7704L18.0548 3.59221Z" stroke="#90A0B7" stroke-width="2" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Отчеты</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15L15.5 11.5" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.3 18C20.7 17 21 15.8 21 14.6C21 9.8 17 6 12 6C7 6 3 9.8 3 14.6C3 15.8 3.3 17 3.7 18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                 
+                            <span class="menu-left__link-text">Тарифы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                            <span class="menu-left__link-text">Заказы</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--active">
+                        <a href="#" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <span class="menu-left__link-text">Товары</span>
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="menu-left__item menu-left__item--bottom" data-off="true">
+                        <a href="javascript:void();" class="menu-left__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="close-icon">
+                                <path d="M11 17L6 12L11 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 17L13 12L18 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                                
+                            <span class="menu-left__link-text">Свернуть</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="page-body ">
+            <header class="header">
+                <div class="header__container">
+                    <nav class="header__menu menu-top">
+                        <ul class="menu-top__list">
+                            <li class="menu-top__item">
+                                <a href="#">
+                                    <div class="menu-top__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <div class="menu-top__icon-number">
+                                            <span class="menu-top__icon-number-qt">99</span> <span  class="menu-top__icon-number-sign">+</span>
+                                        </div>
+                                            
+                                    </div>
+                                    <div class="menu-top__text">
+                                        Заказы
+                                    </div>
+                                    
+                                </a>
+                                <div class="menu-top__popUp" >
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Новые заказы</span>
+                                        <span class="compte__number">99+</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Необработанные заказы</span>
+                                        <span class="compte__number compte__number--blue">20</span>
+                                    </a>
+                                    <a href="#" class="compte">
+                                        <span class="compte__text">Заказы в работе</span>
+                                        <span class="compte__number compte__number--green">5</span>
+                                    </a>
+                                  <div class=" menu-top__popUp-contenairLink">
+                                    <a href="#" class="menu-top__popUp-link">На страницу заказов</a>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="menu-top__item">
+                               <a href="#">
+                                <div class="menu-top__icon">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 10.668C24 8.54624 23.1571 6.51141 21.6569 5.01111C20.1566 3.51082 18.1217 2.66797 16 2.66797C13.8783 2.66797 11.8434 3.51082 10.3431 5.01111C8.84286 6.51141 8 8.54624 8 10.668C8 20.0013 4 22.668 4 22.668H28C28 22.668 24 20.0013 24 10.668Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3067 28C18.0723 28.4041 17.7358 28.7395 17.331 28.9727C16.9262 29.2059 16.4672 29.3286 16 29.3286C15.5329 29.3286 15.0739 29.2059 14.6691 28.9727C14.2642 28.7395 13.9278 28.4041 13.6934 28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                        
+                                    <div class="menu-top__icon-number">
+                                        <span class="menu-top__icon-number-qt">95</span> <span  class="menu-top__icon-number-sign">+</span>
+                                    </div>
+                                        
+                                </div>
+                                <div class="menu-top__text">
+                                    Уведомления
+                                </div>
+                               </a>
+                               <div class="menu-top__popUp menu-top__popUp--notification">
+                                <a href="#" class="notification notification--new">
+                                    <div class="notification__text">Заказ №123456 оплачен</div>
+                                    <div class="notification__date">Сейчас</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                    <div class="notification__date">Вчера в 18:06</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">08.06 исекает срок действия вашего тарифа. Продлите подписку для продолжения работы.</div>
+                                    <div class="notification__date">26 июн в 19:00</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Тариф “Продвинутый владелец” активирован</div>
+                                    <div class="notification__date">03 мая в 14:56</div>
+                                </a>
+                                <a href="#" class="notification">
+                                    <div class="notification__text">Заказ №45897856 оплачен</div>
+                                    <div class="notification__date">10 мар в 14:56</div>
+                                </a>
+                              <div class=" menu-top__popUp-contenairLink">
+                                <a href="#" class="menu-top__popUp-link">Показать все</a>
+                              </div>
+                               </div>
+                            </li>
+                            <li class="menu-top__item menu-top__item--mobile">
+                                <a href="#" class="menu-top__logo">
+                                    <img src="./imgs/picture/logo.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--big">
+                                    <img src="./imgs/picture/logo-court.png" alt=" logo site" class="menu-top__item-logo menu-top__item-logo--small">
+                                </a>
+                            </li>
+                            <li class="menu-top__item">
+                                <a href="#" class="menu-top__user">
+                                    <div class="menu-top__user-name">
+                                        Петров Петрович
+                                    </div>
+                                    <div class="menu-top__user-img">
+                                        <img src="./imgs/picture/user.png" alt=" user profil picture">        
+                                    </div>
+                                </a>
+                                <div class="menu-top__popUp menu-top__popUp--session">
+                                   <a href="#" class="link-user-pop link-user-pop--link">Личные данные</a>
+                                   <a href="#" class="link-user-pop link-user-pop--link">Безопасность</a>
+                                   <a href="#" class="link-user-pop link-user-pop--btn">Выйти</a>
+                                 
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <section class="notification-page js-params" data-class="page-body--one ">
+                <div class="notification-page__container _container">
+                    <div class="notification-page__content">
+                        <div class="notification-page__top">
+                            <h1>Уведомления</h1>
+                            <a href="javascript:void()" class="notification-page__btn">
+                                <div class="notification-page__btn-icon">
+                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.81818 7.47349L2.06116 4.68797C2.03298 4.65951 1.9946 4.64349 1.95455 4.64349C1.9145 4.64349 1.87611 4.65951 1.84794 4.68797L0.89339 5.65238C0.835537 5.71083 0.835537 5.80497 0.89339 5.86342L4.71157 9.72105C4.73975 9.74952 4.77813 9.76553 4.81818 9.76553C4.85823 9.76553 4.89662 9.74952 4.92479 9.72105L13.1066 1.45469C13.1645 1.39624 13.1645 1.30211 13.1066 1.24366L12.1521 0.279246C12.1239 0.250782 12.0855 0.234766 12.0455 0.234766C12.0054 0.234766 11.967 0.250782 11.9388 0.279246L4.81818 7.47349Z" fill="#109CF1" stroke="#109CF1" stroke-width="0.3" stroke-linejoin="round"/>
+                                    </svg>    
+                                </div>
+                                <span class="notification-page__btn-text" >Прочитать все</span>
+                            </a>
+                        </div>
+                        <div class="notification-page__body">
+                            <div class="notification-page__notif-list notif-list">
+                                <a href="javascript:void()" class="notif-list__row notif-list__row--new">
+                                    <div class="notif-list__body">
+                                        <div class="notif-list__title">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                        <div class="notif-list__time">Сегодня в 07:23</div>
+                                    </div>
+                                    <div class="notif-list__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="notif-list__icon notif-list__icon--open d-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.2 8.4C21.7 8.78 22 9.37 22 10V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V10C2 9.68951 2.07229 9.38328 2.21115 9.10557C2.35 8.82786 2.55161 8.58629 2.8 8.4L10.8 2.4C11.1462 2.14036 11.5673 2 12 2C12.4327 2 12.8538 2.14036 13.2 2.4L21.2 8.4V8.4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 10L13.03 15.7C12.7213 15.8934 12.3643 15.996 12 15.996C11.6357 15.996 11.2787 15.8934 10.97 15.7L2 10" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="javascript:void()" class="notif-list__row notif-list__row--new">
+                                    <div class="notif-list__body">
+                                        <div class="notif-list__title">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                        <div class="notif-list__time">Сегодня в 07:23</div>
+                                    </div>
+                                    <div class="notif-list__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="notif-list__icon notif-list__icon--open d-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.2 8.4C21.7 8.78 22 9.37 22 10V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V10C2 9.68951 2.07229 9.38328 2.21115 9.10557C2.35 8.82786 2.55161 8.58629 2.8 8.4L10.8 2.4C11.1462 2.14036 11.5673 2 12 2C12.4327 2 12.8538 2.14036 13.2 2.4L21.2 8.4V8.4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 10L13.03 15.7C12.7213 15.8934 12.3643 15.996 12 15.996C11.6357 15.996 11.2787 15.8934 10.97 15.7L2 10" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="javascript:void()" class="notif-list__row notif-list__row--new">
+                                    <div class="notif-list__body">
+                                        <div class="notif-list__title">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                        <div class="notif-list__time">Сегодня в 07:23</div>
+                                    </div>
+                                    <div class="notif-list__icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="notif-list__icon notif-list__icon--open d-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.2 8.4C21.7 8.78 22 9.37 22 10V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V10C2 9.68951 2.07229 9.38328 2.21115 9.10557C2.35 8.82786 2.55161 8.58629 2.8 8.4L10.8 2.4C11.1462 2.14036 11.5673 2 12 2C12.4327 2 12.8538 2.14036 13.2 2.4L21.2 8.4V8.4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 10L13.03 15.7C12.7213 15.8934 12.3643 15.996 12 15.996C11.6357 15.996 11.2787 15.8934 10.97 15.7L2 10" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="javascript:void()" class="notif-list__row">
+                                    <div class="notif-list__body">
+                                        <div class="notif-list__title">Иванов И. А. назначил себе роль “Франчайзи”</div>
+                                        <div class="notif-list__time">Сегодня в 07:23</div>
+                                    </div>
+                                    <div class="notif-list__icon d-none">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="notif-list__icon notif-list__icon--open ">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21.2 8.4C21.7 8.78 22 9.37 22 10V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V10C2 9.68951 2.07229 9.38328 2.21115 9.10557C2.35 8.82786 2.55161 8.58629 2.8 8.4L10.8 2.4C11.1462 2.14036 11.5673 2 12 2C12.4327 2 12.8538 2.14036 13.2 2.4L21.2 8.4V8.4Z" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 10L13.03 15.7C12.7213 15.8934 12.3643 15.996 12 15.996C11.6357 15.996 11.2787 15.8934 10.97 15.7L2 10" stroke="#334D6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                             
+                               
+                            </div>
+                        </div>
+                        <div class="notification-page__repere repere">
+                            Страница 2 из 16
+                        </div>
+                        <div class="partenaire__contenaire-pagination">
+                            <ul class="partenaire__pagination pagination">
+                                <li class="pagination__item pagination__item--btn pagination__item--btn-2">
+                                    <a href="#" class="pagination__link">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 7L6 12L11 17" stroke="#90A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18 7L13 12L18 17" stroke="#90A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                    </a>
+                                </li>
+                                <li class="pagination__item pagination__item--btn pagination__item--btn-left">
+                                    <a href="#" class="pagination__link">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                                        </svg>
+                                            
+                                    </a>
+                                </li>
+                                <li class="pagination__item pagination__item--active pagination__item--number">
+                                    <a href="#" class="pagination__link">1</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a href="#" class="pagination__link ">2</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a href="#" class="pagination__link ">...</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a href="#" class="pagination__link ">16</a>
+                                </li>
+                                <li class="pagination__item pagination__item--btn pagination__item--right">
+                                    <a href="#" class="pagination__link">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0465 16.4463C9.85121 16.6415 9.85121 16.9581 10.0465 17.1534C10.2417 17.3486 10.5583 17.3486 10.7536 17.1534L10.0465 16.4463ZM15.2 11.9998L15.5536 12.3534L15.9071 11.9998L15.5536 11.6463L15.2 11.9998ZM10.7536 6.84625C10.5583 6.65099 10.2417 6.65099 10.0465 6.84625C9.85121 7.04151 9.85121 7.3581 10.0465 7.55336L10.7536 6.84625ZM10.7536 17.1534L15.5536 12.3534L14.8465 11.6463L10.0465 16.4463L10.7536 17.1534ZM15.5536 11.6463L10.7536 6.84625L10.0465 7.55336L14.8465 12.3534L15.5536 11.6463Z" fill="#90A0B7"/>
+                                        </svg>
+                                            
+                                    </a>
+                                </li>
+                                <li class="pagination__item pagination__item--btn pagination__item--btn-next pagination__item--btn-2">
+                                    <a href="#" class="pagination__link">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 7L6 12L11 17" stroke="#90A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18 7L13 12L18 17" stroke="#90A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__top">
+                        <a href="#">
+                            <img src="./imgs/icon/logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        
+                    </div>
+                    <div class="footer__text">
+                        Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации просьба обращаться к нашим менеджерам!
+                         Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+                    </div>
+                </div>
+            </footer>
+             <!-- menu fixed for mobile -->
+             <nav class="menu-mobile">
+                <ul class="menu-mobile__list">
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 8H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 16H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 24H28" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                        
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                  
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12H14V21H21V12Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 16H3V21H10V16Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                      
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 9.39996L7.5 4.20996" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 15.9999V7.9999C20.9996 7.64918 20.9071 7.30471 20.7315 7.00106C20.556 6.69742 20.3037 6.44526 20 6.2699L13 2.2699C12.696 2.09437 12.3511 2.00195 12 2.00195C11.6489 2.00195 11.304 2.09437 11 2.2699L4 6.2699C3.69626 6.44526 3.44398 6.69742 3.26846 7.00106C3.09294 7.30471 3.00036 7.64918 3 7.9999V15.9999C3.00036 16.3506 3.09294 16.6951 3.26846 16.9987C3.44398 17.3024 3.69626 17.5545 4 17.7299L11 21.7299C11.304 21.9054 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9054 13 21.7299L20 17.7299C20.3037 17.5545 20.556 17.3024 20.7315 16.9987C20.9071 16.6951 20.9996 16.3506 21 15.9999Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.29004 7L12 12L20.71 7" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 22V12" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                 
+                        </a>     
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 11H18C18.7956 11 19.5587 11.3161 20.1213 11.8787C20.6839 12.4413 21 13.2044 21 14C21 14.7956 20.6839 15.5587 20.1213 16.1213C19.5587 16.6839 18.7956 17 18 17H17" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13 12V18" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 7.5C13 7.5 12.56 8 11 8C9.44 8 9 7.5 8 7.5C7 7.5 6.28 8 5.5 8C4.83696 8 4.20107 7.73661 3.73223 7.26777C3.26339 6.79893 3 6.16304 3 5.5C3 4.83696 3.26339 4.20107 3.73223 3.73223C4.20107 3.26339 4.83696 3 5.5 3C6.28 3 7.07 3.5 8 3.5C8.93 3.5 9.44 2 11 2C12.56 2 13 3.5 14 3.5C15 3.5 15.72 3 16.5 3C17.163 3 17.7989 3.26339 18.2678 3.73223C18.7366 4.20107 19 4.83696 19 5.5C19 6.16304 18.7366 6.79893 18.2678 7.26777C17.7989 7.73661 17.163 8 16.5 8C15.72 8 15 7.5 14 7.5Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5 8V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H15C15.5304 22 16.0391 21.7893 16.4142 21.4142C16.7893 21.0391 17 20.5304 17 20V8" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                             
+                        </a>     
+                    </li>
+                </ul>
+            </nav>
+           
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./scripts/dashbord.js"></script>
+    <script src="./scripts/form.js"></script>
+</body>
+</html>

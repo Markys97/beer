@@ -20,8 +20,8 @@
                             <img src="./imgs/icon/logo.svg" alt="logo site">
                         </a>
                     </li>
-                    <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">
+                    <li class="menu-left__item menu-left__item--active">
+                        <a href="./index.html" class="menu-left__link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 3H3V12H10V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M21 3H14V8H21V3Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="menu-left__item">
-                        <a href="#" class="menu-left__link">
+                        <a href="./object.html" class="menu-left__link">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10V10Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -260,7 +260,7 @@
                                 <div class="perso-data__content">
                                     <div class="perso-data__header">
                                     <h2 class="perso-data__title">
-                                        <a href="#">Личные данные</a>
+                                        <a href="#modal-index" data-fancybox>Личные данные</a>
                                     </h2>
                                     <button class="perso-data__button">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1006,6 +1006,34 @@
                  <div class="email-modal__button-wrapper">
                     <a href="#" class="email-modal__button btn">ОК</a>
                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-index" id="modal-index">
+            <div class="modal-index__container">
+                <div class="modal-index__close-button" >
+                    <svg  width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="26" height="26" rx="8" fill="white"/>
+                        <g clip-path="url(#clip0_71_2174)">
+                        <path d="M22.1667 3.83398L3.83337 22.1673" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.83337 3.83398L22.1667 22.1673" stroke="#90A0B7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_71_2174">
+                        <rect width="22" height="22" fill="white" transform="translate(2 2)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>  
+                </div>
+                <div class="modal-index__content">
+                    <div class="modal-index__text">
+                        Тут будет приветственная фраза для пользователя.
+                         В две или даже три строки, которая понравится пользователю
+                          и он будет рад работать в системе.
+                    </div>
+                   <div class="modal-index__wrapper-btn">
+                        <a href="javascript:void()" class="btn modal-index__btn">Начать работу!</a>
+                   </div>
                 </div>
             </div>
         </div>
