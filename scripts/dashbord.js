@@ -629,13 +629,18 @@ $(document).ready(function(){
     })
     // handler input download-image
     $(document).on('input','#download-image',function(e){
-        let nameFile=this.files[0].name;
-        let urlFile= `./imgs/picture/${nameFile}`;
-        let labelImg= $(this).parent('.download-img').find('label').children()[0]
-        let newImg = document.createElement('img')
-        $(newImg).attr('src',urlFile);
-        $(newImg).attr('alt',$(labelImg).attr('alt'));
-        $(labelImg).replaceWith(newImg)
+        let reader= new FileReader();
+        reader.readAsDataURL(this.files[0])
+        reader.addEventListener('load',e=>{
+            let url= reader.result
+            let labelImg= $(this).parent('.download-img').find('label').children()[0]
+            let newImg = document.createElement('img')
+            $(newImg).attr('src',url);
+            $(newImg).attr('alt',$(labelImg).attr('alt'));
+            $(labelImg).replaceWith(newImg)
+        })
+
+
 
     //   $(labelImg).attr('src', urlFile)
 
@@ -673,32 +678,41 @@ $(document).ready(function(){
   // handler width of btn inpit-add page 
   // add product from button file page redaction file
   let fileResults;
-  $(document).on('input','.input-add input',function(e){
+  $(document).on('change','.input-add input',function(e){
 
     if(!$(this).hasClass('alone')){
       
         fileResults=[...this.files];
+       
+
         fileResults.forEach(function(fileResult,index){
-           let productReesult= ` <div class="card-0" data-idProduct=${index}>
-           <div class="card-0__img">
-               <img src="./imgs/picture/${fileResult.name}" alt="product">
-           </div>
-           <div class="card-0__close-button removeBtn1">
-               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                   <g clip-path="url(#clip0_508_6254)">
-                   <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                   <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                   </g>
-                   <defs>
-                   <clipPath id="clip0_508_6254">
-                   <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
-                   </clipPath>
-                   </defs>
-               </svg>
-                   
-           </div>
-       </div>`
-           $(".input-add").before(productReesult);
+            let reader= new FileReader()
+            reader.readAsDataURL(fileResult)
+            reader.addEventListener('load', (e)=>{
+                 let url= reader.result;
+                console.log(url)
+                let productReesult= ` <div class="card-0" data-idProduct=${index}>
+                <div class="card-0__img">
+                    <img src="${url}" alt="product">
+                </div>
+                <div class="card-0__close-button removeBtn1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_508_6254)">
+                        <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_508_6254">
+                        <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                        
+                </div>
+            </div>`
+                $(".input-add").before(productReesult);
+            })
+        
         })
          // controll width input button
          let card0List=[...document.querySelectorAll('.object-redaction__bottom-imgs .card-0')]
@@ -817,9 +831,17 @@ let imgCover= $('.object-redaction__showImg-img');
 $(document).on('change','#form-file-img',function(e){
     let wrapper= $(this).parents('.object-redaction__file-img');
     let imgTarget= $(wrapper).find('.object-redaction__showImg-img img')
+    let file= this.files[0]
     let fileName= this.files[0].name
-    let urlDestination= `./imgs/picture/${fileName}`
-    $(imgTarget).attr('src',urlDestination)
+    let reader= new FileReader();
+    reader.readAsDataURL(file)
+    reader.addEventListener('load',()=>{
+        let url =reader.result;
+        // let urlDestination= `./imgs/picture/${fileName}`
+        $(imgTarget).attr('src',url)
+    })
+    
+   
 })
 
 // handler input file Загрузить изображения в галерею redaction-object2.html
@@ -834,39 +856,50 @@ $(document).on('change','#document3',function(e){
     listFileGaleries= [...this.files];
     let destination= $('.object-redaction__bottom-imgs');
     listFileGaleries.forEach((fileResult,index)=>{
-        let productReesult= ` <div class="card-0" data-idProduct=${index}>
-        <div class="card-0__img">
-            <img src="./imgs/picture/${fileResult.name}" alt="product">
-        </div>
-        <div class="card-0__close-button closeBtn2">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_508_6254)">
-                <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_508_6254">
-                <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
-                </clipPath>
-                </defs>
-            </svg>
-                
-        </div>
-    </div>`
-        $(".input-add").before(productReesult);
+      
+        let fr=  new FileReader();
+       fr.readAsDataURL(fileResult)
+       fr.addEventListener('load',(e)=>{
+         let url =fr.result
+         let productReesult= ` <div class="card-0" data-idProduct=${index}>
+         <div class="card-0__img">
+             <img src="${url}" alt="product">
+         </div>
+         <div class="card-0__close-button closeBtn2">
+             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <g clip-path="url(#clip0_508_6254)">
+                 <path d="M15.411 4.35916L4.12891 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 <path d="M4.12891 4.35916L15.411 15.6412" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                 </g>
+                 <defs>
+                 <clipPath id="clip0_508_6254">
+                 <rect width="13.5385" height="13.5385" fill="white" transform="translate(3 3.23096)"/>
+                 </clipPath>
+                 </defs>
+             </svg>
+                 
+         </div>
+     </div>`
+         $(".input-add").before(productReesult);
+         if( document.querySelectorAll('.object-redaction__bottom-scroll--2 .card-0').length !== 0){
+            $('.object-redaction__bottom-scroll--2').removeClass('d-none')
+            $(this).parent().addClass('d-none')
+           
+        }
+          // controll width input button
+          let card0List=[...document.querySelectorAll('.object-redaction__bottom-imgs .card-0')]
+          if(card0List.length === 0 ){
+            $('.input-add').addClass('input-add--long')
+            }else{
+                $('.input-add').removeClass('input-add--long')
+          }
+       })
+   
+      
+
     })
     
-    if( document.querySelectorAll('.object-redaction__bottom-scroll--2 .card-0').length !== 0){
-        $('.object-redaction__bottom-scroll--2').removeClass('d-none')
-        $(this).parent().addClass('d-none')
-    }
-      // controll width input button
-      let card0List=[...document.querySelectorAll('.object-redaction__bottom-imgs .card-0')]
-      if(card0List.length === 0 ){
-        $('.input-add').addClass('input-add--long')
-        }else{
-            $('.input-add').removeClass('input-add--long')
-      }
+  
      
     
 })
@@ -896,12 +929,20 @@ $(document).on('click','.closeBtn2',function(e){
 
 // handler input file Загрузить обложку в галерею redaction-object.html
 $(document).on('change','#document2',function(e){
-    let imgTarget= $('.d-with .object-redaction__showImg-img img')
-    let url= `./imgs/picture/${this.files[0].name}`
-   $('.d-simple').addClass('d-none')
-   $('.d-with').removeClass('d-none')
 
-   $(imgTarget).attr('src',url)
+    alert('mama')
+    let imgTarget= $('.d-with .object-redaction__showImg-img img')
+    let fr=  new FileReader();
+    fr.readAsDataURL(this.files[0])
+    fr.addEventListener('load',(e)=>{
+        let url= fr.result
+        // let url= `./imgs/picture/${this.files[0].name}`
+        $('.d-simple').addClass('d-none')
+        $('.d-with').removeClass('d-none')
+     
+        $(imgTarget).attr('src',url)
+    })
+
    
    
 })
@@ -1025,12 +1066,16 @@ $(document).on('mouseleave','.plus-info__icon',function(e){
 // 
 $(document).on('change','#file-img-dln',function(e){
     let file= this.files[0]
-    let url= './imgs/picture/'+file.name
+    let reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.addEventListener('load',e=>{
+        let url= reader.result
+        if($('.file-img__img-result').hasClass('d-none')){
+            $('.file-img__img-result').removeClass('d-none')
+        }
+        $('.file-img__img-result img').attr('src',url)
+    })
 
-    if($('.file-img__img-result').hasClass('d-none')){
-        $('.file-img__img-result').removeClass('d-none')
-    }
-    $('.file-img__img-result img').attr('src',url)
 })
 // end 
 })
