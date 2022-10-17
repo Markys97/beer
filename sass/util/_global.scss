@@ -39,6 +39,9 @@
 .d-block{
     display: block!important;
 }
+.d-none{
+    display: none!important;
+}
 .visible{
     opacity: 1!important;
     z-index: 100!important;
@@ -162,7 +165,7 @@
 
 ._container{
     // border: 1px solid red;
-    padding: 24px 88px 40px ;
+    padding: 24px 88px 0 ;
     
 }
 
@@ -170,7 +173,7 @@
 @media screen and (max-width:1500px) {
     ._container{
         // border: 1px solid red;
-        padding: 24px 40px 40px 88px ;
+        padding: 24px 40px 0 88px ;
         
     }
 }

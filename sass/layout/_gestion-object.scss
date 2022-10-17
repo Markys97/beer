@@ -53,12 +53,13 @@
     display: block;
    }
    &--2{
-    &__container{
 
-    }
+
     &__content{
         padding-left: 122px;
         padding-right: 104px;
+
+      
     }
    
    }
@@ -165,6 +166,22 @@
              padding-right: 32px;
          }
         
+        }
+    }
+    .list-point{
+        &__wrapper{
+            flex-direction: column;
+            padding: 0 32px;
+        }
+        &__left{
+            max-width: unset;
+        }
+        &__right{
+            justify-content: unset;
+            flex-direction: column;
+        }
+        &__header{
+            padding: 0 32px;
         }
     }
 }

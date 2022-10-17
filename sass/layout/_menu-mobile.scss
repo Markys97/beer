@@ -9,6 +9,7 @@
    transform: translateX(-50%);
     display: none;
     transition: all 500ms ease;
+    z-index: 1000;
     &__link{
         display: block;
         

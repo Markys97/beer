@@ -255,7 +255,16 @@
             background: #F6F8FB;
             svg path{
                 fill: #9FD7F9;
+                
             }
+            .item-product__icon--special{
+                
+               svg path{
+                fill: unset;
+                stroke: #9FD7F9;
+               }
+            }
+
             .item-product__text{
                 color:  #9FD7F9;;
             }
@@ -762,6 +771,55 @@
 
     background:rgba(#323C47,0.2);
 }
+.modal-index{
+    width: 710px;
+    min-height: 230px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: none;
+    &__container{
+        position: relative;
+    }
+    &__close-button{
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    &__content{
+        padding-top: 74px;
+        width: 532px;
+        margin: 0 auto;
+       
+    }
+    &__text{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #323C47;
+        
+    }
+    &__wrapper-btn{
+        display: flex;
+        justify-content: center;
+
+        margin-top: 24px;
+    }
+}
 
 
 .fancybox__content>.carousel__button.is-close {
@@ -874,7 +932,7 @@
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .dashbord{
         margin-top: 40px;
         // background: #000;
@@ -1350,6 +1408,27 @@
           
            
           
+        }
+    }
+    .modal-index{
+        width: calc(100% - 32px);
+        min-height: 314px;
+        &__close-button{
+            right: 16px; 
+            top: 16px;
+        }
+        &__content{
+            width: 100%;
+            margin: 0 auto;
+            padding:90px 16px 24px;
+           
+        }
+      
+        &__wrapper-btn{
+            display: flex;
+            justify-content: center;
+    
+            margin-top: 48px;
         }
     }
 

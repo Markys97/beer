@@ -1,0 +1,59 @@
+.catalog-management{
+//    border: 1px solid red;
+   margin-top: 48px;
+    h1{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.02em;
+        color: #323C47;
+    }
+    &__btn{
+        display: none;
+    }
+    .partenaire__header{
+        margin-top: 48px;
+    }
+    .partenaire__input{
+        max-width: 500px;
+    }
+    &__list-product{
+        margin-top: 32px;
+    }
+    &__top-btn{
+        min-width: 214px;
+    }
+   
+}
+
+
+@media screen and (max-width:1200px) {
+    .catalog-management{
+        margin-top: 40px;
+        .partenaire__header{
+            margin-top: 40px;
+        }
+        &__container{
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .catalog-management{
+   
+        h1{
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+        }
+        &__btn{
+            display: none;
+        }
+       
+       
+       
+    }
+}
